@@ -25,11 +25,11 @@ author:
   avatar           : "profile.png"
   name             : "Zhenghe Guo"
   pronouns         : "he/him"# example: "she/her"
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "independent researcher in reconstruction"
   location         : "Hangzhou,China"
   employer         : "Zhejiang University"
   uri              : # URL
-  email            : "none@example.org"
+  email            : "3230100923@zju.edu.cn"
 
   # Academic websites
   academia         : # URL
@@ -39,8 +39,8 @@ author:
   impactstory      : # URL
   orcid            : "http://orcid.org/yourorcidurl"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
+  # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  researchgate     : https://www.researchgate.net/scientific-contributions/Zhenghe-Guo-2324807179# URL
   scopus           : # URL
 
   # Repositories and software development
