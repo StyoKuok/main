@@ -42,7 +42,7 @@
 
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
-    font-family: $sans-serif-narrow;
+    font-family: $times;
   }
 
   h3, h4 {
@@ -50,7 +50,7 @@
   }
 
   p, li {
-    font-family: $sans-serif;
+    font-family: $times;
     font-size: $type-size-6;
     line-height: 1.5;
   }
@@ -161,7 +161,7 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  font-family: $sans-serif;
+  font-family: $times;
   z-index: 10;
   position: relative;
   cursor: pointer;
