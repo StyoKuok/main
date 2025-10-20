@@ -51,7 +51,7 @@ Publications
     </div>
     <div class="publication-details">
       <span>
-        页码: pp. 1-5.
+        pages: pp. 1-5.
       </span>
       <span style="margin-left: 10px;">
         DOI:
@@ -61,7 +61,7 @@ Publications
       </span>
     </div>
     <div class="publication-keywords">
-      <strong>关键词:</strong> Base stations; Fluids; Simulation; System performance; Integrated sensing and communication; Autonomous aerial vehicles; Reliability engineering; Convex functions; Antennas; Optimization; Integrated sensing and communication (ISAC); unmanned aerial vehicle (UAV); fluid antennas (FA).
+      <strong>Key Words:</strong> Base stations; Fluids; Simulation; System performance; Integrated sensing and communication; Autonomous aerial vehicles; Reliability engineering; Convex functions; Antennas; Optimization; Integrated sensing and communication (ISAC); unmanned aerial vehicle (UAV); fluid antennas (FA).
     </div>
   </div>
 </li>
