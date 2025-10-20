@@ -22,11 +22,11 @@ repository               : "StyoKuok/main"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "D:/main/images/sparklabimage.jpg"
   name             : "Zhenghe Guo"
-  pronouns         : "he/him"# example: "she/her"
+  pronouns         : "he/him"
   bio              : "independent researcher in reconstruction"
-  location         : "Hangzhou,China"
+  location         : "Hangzhou, China"
   employer         : "Zhejiang University"
   uri              : # URL
   email            : "3230100923@zju.edu.cn"
