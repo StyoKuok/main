@@ -11,24 +11,24 @@ redirect_from:
 
 Education
 ======
-* visiting student in Kent Ridge,Singapore,National University of Singapore, 2025
-* B.S. in Hangzhou,Zhejiang University,2023-2027(expected)
+* visiting student in Data Science, National University of Singapore, 2025
+* B.S. in Agricultural Engineering, Zhejiang University, 2023-2027 (expected)
 
 Work experience
 ======
 * Fall 2024: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
+  *College of Control science and Engineering, Zhejiang University
+  * Duties included: Optimization and field Reconstruction
   * Supervisor: Professor Hub
 
-* Summer 2024: Research Assistant
-  * Zhejiang University
-  * Duties included: Tagging issues
+* Mar.2025 - Oct. 2025: Research Assistant
+  *College of Agricultural Engineering and Food Science, Zhejiang University
+  * Duties included: 3d Navigation of zebrafish with Lidar and dreamer models
   * Supervisor: Professor Git
 
 Skills
 ======
-* Language Proficiency:English CET-6 682/710; madarin Chinese(mother tongue); Wu dialect of Chinese(mother tongue); A little Spanish
+* Language Proficiency: English CET-6 682/710; madarin Chinese(mother tongue); Wu dialect of Chinese(mother tongue); A little Spanish
 * Numerical Analysis and Computer Science: Machine Learning(with both tensorflow and
 pytorch), Mathematical modelling, Optimization, Information Theory, Artificial Intelligence, Linear Algebra, Monte Carlo Methods, ODEs, Parallel Programming, Data Structures
 * Tech Stack: Python, C, C++, linux, git, matlab, ROS, openMV, openCV, pattern recognition
