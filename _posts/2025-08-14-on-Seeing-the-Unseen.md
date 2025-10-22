@@ -1,10 +1,10 @@
 
-On Seeing the Unseen
+# On Seeing the Unseen
 
 tags:
-  - perception
-  - information
-  - thought
+  - perception; information; thought
+
+by Zhenghe Guo. All rights reserved.
 
 There is a strange thrill in trying to reconstruct what is mostly hidden.
 The world rarely hands us complete pictures. We catch fragments, glimpses, scattered traces of signals—and yet, somehow, we manage to act, to decide, to imagine the whole from the pieces.
