@@ -1,7 +1,7 @@
 ---
 title: "Rate Maximization for UAV-assisted ISAC System with Fluid Antennas"
 collection: publications
-category: manuscripts
+category: "Conference Papers"
 permalink: https://doi.org/10.1109/ICCCWorkshops67136.2025.11148178
 excerpt: 'This paper is about the number 1.'
 date: 2025-8-13
