@@ -28,7 +28,7 @@ The system integrates sensor data (LiDAR and IMU) for odometry and real-time map
 - Successful demonstration of autonomous navigation and map-building capabilities.
 - Captured vehicle movement in real-time (see GIF below).
 
-![Vehicle Movement](../movement.mp4)
+![Vehicle Movement](./movement.mp4)
 
 ---
 
