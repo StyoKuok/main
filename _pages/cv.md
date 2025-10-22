@@ -17,12 +17,12 @@ Education
 Work experience
 ======
 * Fall 2024: Research Assistant
-  *College of Control science and Engineering, Zhejiang University
+  * College of Control science and Engineering, Zhejiang University
   * Duties included: Optimization and field Reconstruction
   * Supervisor: Professor Hub
 
 * Mar.2025 - Oct. 2025: Research Assistant
-  *College of Agricultural Engineering and Food Science, Zhejiang University
+  * College of Agricultural Engineering and Food Science, Zhejiang University
   * Duties included: 3d Navigation of zebrafish with Lidar and dreamer models
   * Supervisor: Professor Git
 
