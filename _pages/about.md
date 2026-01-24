@@ -14,8 +14,11 @@ My trajectory evolves from communication inference and information recovery to o
 
 Competitions and Awards
 ======
-• **The 15th MathorCup Undergraduate Mathematical Contest in Modeling**: **Third Prize** (Regional Division)
-  *Paper*: “Short-haul Transportation Volume Forecasting and Scheduling Optimization Model Based on XGBoost and Proportional Mapping”
+• **2025 The 3rd Quantum Information Technology and Application Innovation Contest**: **National First Prize**,Runner-Up
+  *project*: "Coherent Ising Machine-based Decoding Optimization for LDPC Codes in Wireless Communication Networks"
+
+• **2025 Asia and Pacific Mathematical Contest in Modeling (APMCM)**: **National First Prize**(top 2%)
+  *project*: "motion planning framework for Unitree G1 humanoid robot dance performance"
 
 • **2025 “DigitalCup” Undergraduate Mathematical Contest in Modeling (Mathematics Group)**: **National First Prize**
 
@@ -31,16 +34,12 @@ Competitions and Awards
 • **2025 China International College Students’ Innovation Contest**: **Bronze Medal**
   *Project*: “AeroBase CloudSense – A Low-Altitude Detection System Based on Integrated Remote Sensing”
 
-• **Zhejiang University**: **Second and Third-Class Scholarship**
+• **The 15th MathorCup Undergraduate Mathematical Contest in Modeling**: **Third Prize** (Regional Division)
+  *Paper*: “Short-haul Transportation Volume Forecasting and Scheduling Optimization Model Based on XGBoost and Proportional Mapping”
 
-• **Zhejiang University**: **Innovation and Entrepreneurship Model Student**
+• **Zhejiang University**: **Xiangyang Scholarship, First-Class**; **Keyue Zhongkai Scholarship**;**Second and Third-Class Scholarship**
 
-• **Zhejiang University**: **Academic Excellence Model Student**
-
-• **2025 The 3rd Quantum Information Technology and Application Innovation Contest**: **Ongoing**
-  *(Mathematical Modeling Innovation Contest Based on Coherent Optical Quantum Computers)*
-
-• **Co-authored Paper (MCM)**: “Self-Fulfilling Prophecy: A Precise Multimethod Approach Optimizing Olympic Medal Predictions”
+• **Zhejiang University**: **Innovation and Entrepreneurship Model Student**,**Academic Excellence Model Student** and 4 other model student honors
 
 • **Nvidia Certificate** in CUDA programming
 
