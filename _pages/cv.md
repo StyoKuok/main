@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "this page has not been updated for months. please refer to this link for newest CV:[ https://github.com/StyoKuok/cv](https://github.com/StyoKuok/cv)"
+title: "this page has not been updated for months. please refer to this link for newest CV: https://github.com/StyoKuok/cv"
 permalink: /cv/
 author_profile: true
 redirect_from:
