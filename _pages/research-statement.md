@@ -17,7 +17,7 @@ My research focuses on how physical agents sense, reconstruct, and reason about 
 **Reinforcement Learning under Physical Constraints;**
 **application domain include micro-robotic systems, legged and moving robots, and embodied sensing platforms.**
 
-My research trajectory started from communication and information theory, where I worked on wireless and semantic communication systems for UAVs, grounding my training in uncertainty, representation efficiency, and signal-to-decision pipelines.
+My research trajectory started from communication and information theory, where I worked on UAV assisted ISAC system, grounding my training in uncertainty, representation efficiency, and signal-to-decision pipelines.
 
 From there, my focus gradually shifted from transmission to perception: how sparse, noisy, and partial sensory signals can be reconstructed into meaningful representations of the physical world. This led me to work on tactile sensing, sparse sensor reconstruction, and learning-based methods for recovering stress fields and geometric structures.
 
