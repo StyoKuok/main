@@ -24,10 +24,10 @@ main:
     url: /portfolio/
 
   - title: "Talks & Teaching"
-    url: /teaching/    
-        
+    url: /teaching/
+
   - title: "Blog Posts"
     url: /year-archive/
-    
+
   # - title: "CV"
   #   url: /cv-json/

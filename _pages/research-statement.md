@@ -7,13 +7,15 @@ author_profile: true
 
 My research focuses on how physical agents sense, reconstruct, and reason about the real world under uncertainty. I bridge communication and information theory with learning, geometry, and physics to build data-efficient, physically grounded world models for embodied intelligence.
 
-**Embodied Intelligence & Physical Agents**
-**World Models & Model-Based Learning**
-**3D Geometry, Reconstruction, and Rendering**
-**Physical & Tactile Sensing**
-**Uncertainty, Information Theory, and Communication**
-**Reinforcement Learning under Physical Constraints**
-**application domain include micro-robotic systems, legged and moving robots, and embodied sensing platforms**
+**Keywords:**
+
+**embodied Intelligence & Physical Agents;**
+**World Models & Model-Based Learning;**
+**3D Geometry, Reconstruction, and Rendering;**
+**Physical & Tactile Sensing;**
+**Uncertainty, Information Theory, and Communication;**
+**Reinforcement Learning under Physical Constraints;**
+**application domain include micro-robotic systems, legged and moving robots, and embodied sensing platforms.**
 
 My research trajectory started from communication and information theory, where I worked on wireless and semantic communication systems for UAVs, grounding my training in uncertainty, representation efficiency, and signal-to-decision pipelines.
 
