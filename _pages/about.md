@@ -15,32 +15,32 @@ My trajectory evolves from communication inference and information recovery to o
 Competitions and Awards
 ======
 
-### **Awards in Mathematical Modeling**
-• **2025 “DigitalCup” Undergraduate Mathematical Contest in Modeling (Mathematics Group)**: **National First Prize**  
-• **2025 “DigitalCup” Undergraduate Mathematical Contest in Modeling (Non-Mathematics Group)**: **National First Prize**  
-• **The 27th HuaDong Cup Undergraduate Mathematical Contest in Modeling**: **National Third Prize**  
-  *Paper*: “Ski Jumping Motion’s Three-Stage Coupling Modeling and Optimization: In-run Dynamics, Flight Control, and Landing Buffer”  
-• **The 16th National Undergraduate Mathematics Competition (Non-Mathematics A Category)**: **Second Prize**  
-• **The 15th MathorCup Undergraduate Mathematical Contest in Modeling**: **Third Prize** (Regional Division)  
-  *Paper*: “Short-haul Transportation Volume Forecasting and Scheduling Optimization Model Based on XGBoost and Proportional Mapping”  
-
 ### **Awards in Robotics**
-• **2025 Asia and Pacific Mathematical Contest in Modeling (APMCM)**: **National First Prize** (top 2%)  
-  *Project*: “Motion planning framework for Unitree G1 humanoid robot dance performance”  
-• **Zhongkong Cup Robotics Competition**: **Second Prize**  
+• **2025 Asia and Pacific Mathematical Contest in Modeling (APMCM)**: **National First Prize** (top 2%)
+  *Project*: “Motion planning framework for Unitree G1 humanoid robot dance performance”
+• **Zhongkong Cup Robotics Competition**: **Second Prize**
 
 ### **Awards in Communications**
-• **2025 The 3rd Quantum Information Technology and Application Innovation Contest**: **National First Prize**, Runner-Up  
-  *Project*: “Coherent Ising Machine-based Decoding Optimization for LDPC Codes in Wireless Communication Networks”  
-• **2025 China International College Students’ Innovation Contest**: **Bronze Medal**  
-  *Project*: “AeroBase CloudSense – A Low-Altitude Detection System Based on Integrated Remote Sensing”  
+• **2025 The 3rd Quantum Information Technology and Application Innovation Contest**: **National First Prize**, Runner-Up
+  *Project*: “Coherent Ising Machine-based Decoding Optimization for LDPC Codes in Wireless Communication Networks”
+• **2025 China International College Students’ Innovation Contest**: **Bronze Medal**
+  *Project*: “AeroBase CloudSense – A Low-Altitude Detection System Based on Integrated Remote Sensing”
+
+### **Awards in Mathematical Modeling**
+• **2025 “DigitalCup” Undergraduate Mathematical Contest in Modeling (Mathematics Group)**: **National First Prize**
+• **2025 “DigitalCup” Undergraduate Mathematical Contest in Modeling (Non-Mathematics Group)**: **National First Prize**
+• **The 27th HuaDong Cup Undergraduate Mathematical Contest in Modeling**: **National Third Prize**
+  *Paper*: “Ski Jumping Motion’s Three-Stage Coupling Modeling and Optimization: In-run Dynamics, Flight Control, and Landing Buffer”
+• **The 16th National Undergraduate Mathematics Competition (Non-Mathematics A Category)**: **Second Prize**
+• **The 15th MathorCup Undergraduate Mathematical Contest in Modeling**: **Third Prize** (Regional Division)
+  *Paper*: “Short-haul Transportation Volume Forecasting and Scheduling Optimization Model Based on XGBoost and Proportional Mapping”
 
 ### **University Honors**
-• **Zhejiang University**: **Xiangyang Scholarship, First-Class**; **Keyue Zhongkai Scholarship**; **Second and Third-Class Scholarship**  
-• **Zhejiang University**: **Innovation and Entrepreneurship Model Student**, **Academic Excellence Model Student** and 4 other model student honors  
+• **Zhejiang University**: **Xiangyang Scholarship, First-Class**; **Keyue Zhongkai Scholarship**; **Second and Third-Class Scholarship**
+• **Zhejiang University**: **Innovation and Entrepreneurship Model Student**, **Academic Excellence Model Student** and 4 other model student honors
 
 ### **Certificates**
-• **Nvidia Certificate** in CUDA programming  
+• **Nvidia Certificate** in CUDA programming
 
 Courses
 ======
