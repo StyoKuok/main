@@ -46,9 +46,9 @@ Courses
 ======
 • **Data Science**: Fundamentals of Artificial Intelligence (**95/100**), Frontiers of Artificial Intelligence (**93/100**), Probability Theory and Mathematical Statistics (**93/100**), Fundamentals of Data Structures, Mathematical Modeling, Information Theory, Introduction of Data Science with Python and Tableau (**95/100**), Decision Trees for Machine Learning and Data Analysis (**100/100**), Network Autonomous Systems, HPC Comprehensive Practice (**90/100**), etc.
 
-• **Mechanical Engineering**: Automatic Control Principles (**94/100**), Control Theory (**94/100**), Theoretical Mechanics (**93/100**), Material Mechanics (**90/100**), Engineering Fluid Mechanics (**92/100**), Thermodynamics (**92/100**), etc.
+• **Mechanical Engineering**: Automatic Control Principles (**94/100**), Cybernetics (**94/100**), Theoretical Mechanics (**93/100**), Material Mechanics (**90/100**), Engineering Fluid Mechanics (**92/100**), Thermodynamics (**92/100**), Fundamentals of Mechanical Design, Fundamentals of Mechanical Manufacturing(**91/100**), Microcomputer Principles, Robotics Technology and Practice, Biosystems and Bioproduction Robots(**94/100**),etc.
 
-• **Currently Learning**: Fundamentals of Mechanical Design, Fundamentals of Mechanical Manufacturing, Microcomputer Principles, Robotics Technology and Practice, Biosystems and Bioproduction Robots, etc.
+• **Currently Learning**:Renewable Energy Engineering, Agricultural Material Physics, Biosensors and Testing Technology, Agricultural Internet of Things (IoT) and Its Applications, Bio-environmental Engineering, etc.
 
 Extracurricular Activities
 ======
