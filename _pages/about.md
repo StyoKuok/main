@@ -10,7 +10,7 @@ redirect_from:
 I am an undergraduate researcher at Zhejiang University, majoring in Agricultural Engineering, with a minor in Advanced Class of Engineering Education(ACEE). I have broad interests in information theory, sparse reconstruction, and geometric machine learning.
 
 My research explores how sparse and operator-based representations can bridge physical systems and computational intelligence.
-My trajectory evolves from communication inference and information recovery to operator learning and world modeling, aiming to uncover universal principles of reconstructability across systems—from physical sensors to geometric scenes.
+My trajectory evolves from communication inference and information recovery to operator learning and world modeling, aiming to uncover universal principles of reconstructability across systems—from physical sensors to geometric scenes. Please refer to the tab "Research Statement" for details.
 
 Competitions and Awards
 ======
