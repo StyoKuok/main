@@ -1,20 +1,49 @@
-# Ignore the contents of the _site directory and other cache directories
-_site/
-.sass-cache/
+_site
+.bundle
+.DS_store
+.idea
+.jekyll-cache
+.jekyll-metadata
+.ruby-version
+.sass-cache
+.tweet-cache
+.venv
+assets/libs/
+assets/rendercv/rendercv_output/*.typ
+al-folio-upgrade-report.md
+node_modules/
+output/playwright/
+test-results/
+vendor
 
-# Ignore the directory for local files during development
-local/
+# Local runtimes and build caches
+.runtime/
+.npm-cache/
+tmp/
 
-# Ignore the Gemfile that is generated
-Gemfile.lock
+# Private source materials and duplicate root assets
+robotics_portfolio/
+photo_human.jpg
+iNUS.png
+tsinghua.png
+westlake.jpg
+zju.png
 
-# Ignore files created by npm
-node_modules
-package-lock.json
+# Local configuration, credentials, and private keys
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+secrets.*
+credentials.*
 
-# Ignore the vendor file at root level and bundle for alternative installation
-/vendor/
-.bundle/
-
-# Ignore folders related to IDEs
-.vscode/
+# Python bytecode from bin/ helper scripts
+__pycache__/
+*.pyc

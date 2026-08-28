@@ -1,11 +1,7 @@
 ---
-layout: archive
-title: "News"
+layout: page
+title: news
 permalink: /news/
-author_profile: true
 ---
 
-{% include base_path %}
-
-*   **2026.01**: New paper accepted!
-*   (Add your news here)
+{% include news.liquid %}

@@ -1,0 +1,123 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.68in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\definecolor{accent}{HTML}{1F5A70}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlist[itemize]{leftmargin=1.15em,itemsep=1.5pt,topsep=2pt,parsep=0pt}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\vspace{-3pt}\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{9pt}{5pt}
+\newcommand{\entry}[4]{\textbf{#1}\hfill #2\\\textit{#3}\hfill\textit{#4}\\[-1pt]}
+\newcommand{\project}[2]{\textbf{#1}\hfill #2}
+\begin{document}
+
+{\LARGE\bfseries Zhenghe Guo}\hfill
+\begin{tabular}{r}
+\href{mailto:3230100923@zju.edu.cn}{3230100923@zju.edu.cn}\\
+\href{https://styokuok.github.io/main/}{styokuok.github.io/main} \quad
+\href{https://github.com/StyoKuok}{GitHub} \quad
+\href{https://scholar.google.com/citations?user=aaaoBoEAAAAJ\&hl=en}{Google Scholar}
+\end{tabular}
+
+\vspace{4pt}
+Final-year undergraduate researcher working on embodied systems and spatial intelligence, with a focus on learned state representations, world modeling, and planning.
+
+\section{Education}
+\entry{Zhejiang University}{Hangzhou, China}{B.Eng. in Agricultural Engineering; Minor in Advanced Class of Engineering Education}{2023--2027}
+GPA: 3.86/4.00. Undergraduate research with Mingchuan Zhou.
+
+\entry{National University of Singapore}{Singapore}{Visiting Student, Statistics and Data Science (Global Science Summer Programme)}{Jun--Jul 2025}
+GPA: 4.00/4.00; decision-tree methods instructed by \href{https://pages.stat.wisc.edu/~loh/}{Prof. Wei-Yin Loh}.
+
+\section{Research Experience}
+\entry{Westlake University}{Hangzhou, China}{Visiting Research Intern, Inception3D, led by Prof. Anpei Chen}{May--Oct 2026}
+Research on deformable-object manipulation and physics-grounded world models, combining MPM-based simulation with learned residual dynamics.
+
+\entry{Tsinghua University, Institute for AI Industry Research (AIR)}{Beijing, China}{Visiting Research Intern, DISCOVER Lab}{Jan--Feb 2026}
+Integrated a StereoHO-based perception baseline, calibration, visualization, and robot-side infrastructure for stereo hand-object reconstruction and handover experiments.
+
+\entry{Zhejiang University, Robotic Micro/Nano Manipulation Lab}{Hangzhou, China}{Undergraduate Research Assistant, advised by Mingchuan Zhou}{Feb 2025--present}
+Developing modeling, simulation, kinematics, and autonomous navigation methods for a magnetically controlled zebrafish robot.
+
+\entry{Zhejiang University, State Key Laboratory of CAD\&CG}{Hangzhou, China}{Undergraduate Research Assistant, advised by Prof. Ruizhen Hu}{Oct 2025--Jun 2026}
+Research on instance-level reconstruction, with additional work on physics-grounded articulated-object reconstruction and street-scene reconstruction using COLMAP and FreeTimeGS.
+
+\entry{Zhejiang University, Agile Robotic Tele-systems (ARTs) Lab}{Hangzhou, China}{Research Assistant, advised by Prof. Gaofeng Li}{Oct 2024--present}
+Research on tactile sensing for biomimetic soft-tissue stress-field reconstruction, including sensor-layout optimization, active and sparse sampling, Gaussian-process inference, curved-surface tactile sensing, simulation, and data processing.
+
+\section{Publications}
+\textbf{Zhenghe Guo}. ``ObjectTwin: Measuring the Asset Correspondence Gap for Capture-Anchored Digital Twins.'' \href{https://styokuok.github.io/sim_ready/}{Project page}
+
+\vspace{3pt}
+X. Yang, \textbf{Z. Guo}, S. Liang, Z. Yang, C. Zhu, and Z. Zhang. ``Rate Maximization for UAV-assisted ISAC System with Fluid Antennas.'' \textit{2025 IEEE/CIC International Conference on Communications in China Workshops}, pp. 1--5, 2025. \href{https://doi.org/10.1109/ICCCWorkshops67136.2025.11148178}{doi:10.1109/ICCCWorkshops67136.2025.11148178}
+
+\vspace{3pt}
+\textbf{Zhenghe Guo et al.} ``Action Identification and Validation Design for Prediction with Missing Covariates.'' Manuscript in preparation.
+
+\section{Selected Projects}
+\project{ZJUDancer RoboCup Humanoid Vision and Localization}{2025--2026}
+\begin{itemize}
+\item Developed and debugged ball, field, and robot perception, self-localization, and odometry integration for autonomous humanoid soccer; First Prize and Runner-up at RoboCup China Open 2026.
+\end{itemize}
+
+\project{DYNAMO -- Unitree G1 Dance Motion Planning}{2025}
+\begin{itemize}
+\item Designed a dynamics-aware framework combining contact scheduling, ZMP-aware centroidal control, whole-body coordination, and electrical-energy analysis; Asia and Pacific Mathematical Contest in Modeling (APMCM) National First Prize (top 2\%).
+\end{itemize}
+
+\newpage
+\section{Selected Projects (continued)}
+\project{RoboARM -- Vision-Guided Gomoku Manipulation}{2025}
+\begin{itemize}
+\item Integrated YOLO and ArUco perception, an HTTP-to-ROS decision bridge, Negamax search, calibration, CAN-based six-axis arm control, and a pneumatic end effector into an autonomous pick-and-place loop.
+\end{itemize}
+
+\project{TurtleBot Autonomous Navigation}{2025}
+\begin{itemize}
+\item Implemented a ROS RRT* global planner with goal-biased sampling, KD-tree collision queries, obstacle inflation, parent selection, rewiring, path publication, and real-robot visualization.
+\end{itemize}
+
+\project{Hybrid QUBO LDPC Decoder}{2025}
+\begin{itemize}
+\item Engineered an LDPC simulation and decoding prototype with belief-propagation baselines, QUBO construction, adaptive penalties, partitioned solving, and BER/FER/runtime evaluation.
+\end{itemize}
+
+\section{Selected Awards}
+\textbf{Robotics}
+\begin{itemize}
+\item RoboCup China Open, Humanoid League (Small) -- First Prize, Runner-up, Team ZJUDancer, 2026.
+\item Zhongkong Cup Robotics Competition -- Second Prize, 2025.
+\end{itemize}
+\textbf{Communication and Innovation}
+\begin{itemize}
+\item Quantum Information Technology and Application Innovation Contest -- National First Prize, Runner-up, 2025.
+\item China International College Students' Innovation Contest -- Bronze Medal, 2025.
+\end{itemize}
+\textbf{Mathematical Modeling}
+\begin{itemize}
+\item Asia and Pacific Mathematical Contest in Modeling (APMCM) -- National First Prize (top 2\%), 2025.
+\item DigitalCup Undergraduate Mathematical Contest in Modeling -- National First Prize in Mathematics and Non-Mathematics groups, 2025.
+\item National Undergraduate Mathematics Competition, Non-Mathematics Category A -- Second Prize.
+\end{itemize}
+
+\section{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{1.42in}@{\hspace{0.45em}}X@{}}
+Programming & Python, C/C++, MATLAB, R, JavaScript/TypeScript, Git, Docker, Linux \\
+Robotics & ROS, OpenCV, PyTorch, CUDA, calibration, kinematics and dynamics, path planning, embedded systems, Arduino/STM32/Raspberry Pi \\
+Perception and ML & 3D reconstruction, SfM, visual odometry, object detection, sensor fusion, reinforcement learning, optimization \\
+\end{tabularx}
+
+\section{Languages}
+Chinese (native) \quad English (TOEFL 110)
+
+\vfill
+{\footnotesize Last updated August 2026. Detailed project reports, demos, and videos: \href{https://styokuok.github.io/main/}{https://styokuok.github.io/main/}}
+\end{document}
+
