@@ -24,7 +24,7 @@ My primary research interest is learning representations and world models for ph
 Fluids and deformable objects are a demanding testbed for this question, not its boundary. My current projects also span capture-anchored 3D reconstruction, stereo hand-object perception, robot localization, and model-based control. I am interested in extending the same representation questions to generalist visuomotor and vision-language-action policies. See the [Research Statement]({{ '/research/' | relative_url }}) for details.
 
 <div class="profile-links">
-<a href="#publications">Publications</a> · <a href="#projects">Projects</a> · <a href="#education">Education</a> · <a href="#awards">Awards</a> · <a href="https://scholar.google.com/citations?user=aaaoBoEAAAAJ&hl=en">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Zhenghe-Guo-2324807179/">ResearchGate</a> · <a href="https://www.linkedin.com/in/zhenghe-guo-318948378/">LinkedIn</a> · <a href="{{ '/assets/pdf/Zhenghe_Guo_CV.pdf' | relative_url }}">CV</a> · <a href="{{ '/research/' | relative_url }}">Research Statement</a>
+<a href="#publications">Publications</a> · <a href="#projects">Projects</a> · <a href="#education">Education</a> · <a href="#awards">Awards</a> · <a href="https://scholar.google.com/citations?user=aaaoBoEAAAAJ&hl=en">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Zhenghe-Guo-2324807179/">ResearchGate</a> · <a href="https://www.linkedin.com/in/zhenghe-guo-318948378/">LinkedIn</a> · <a href="{{ '/cv/' | relative_url }}">CV</a> · <a href="{{ '/research/' | relative_url }}">Research Statement</a>
 </div>
 
 <style>
