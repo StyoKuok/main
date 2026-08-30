@@ -23,11 +23,11 @@ tmp/
 
 # Private source materials and duplicate root assets
 robotics_portfolio/
-photo_human.jpg
-iNUS.png
-tsinghua.png
-westlake.jpg
-zju.png
+/photo_human.jpg
+/iNUS.png
+/tsinghua.png
+/westlake.jpg
+/zju.png
 
 # Local configuration, credentials, and private keys
 .env
