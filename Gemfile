@@ -47,7 +47,7 @@ group :al_folio_plugins do
     gem 'al_folio_bootstrap_compat', '= 1.0.0'
     gem 'al_cookie', '= 1.0.1'
 
-    gem 'al_analytics', '= 1.0.2'
+    gem 'al_analytics', git: 'https://github.com/StyoKuok/al-analytics.git', ref: 'f19d1afc8f787a31929ee17bd8bc3f2659274114'
     gem 'al_citations', '= 1.0.1'
     gem 'al_ext_posts', '= 1.0.3'
     gem 'al_img_tools', '= 1.0.3'
