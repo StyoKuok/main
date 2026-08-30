@@ -1,0 +1,42 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.78in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\definecolor{accent}{HTML}{1F5A70}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.25em,itemsep=2pt,topsep=3pt}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries TurtleBot Autonomous Navigation with a Custom RRT* Global Planner}\\[7pt]
+{\large Zhenghe Guo}\\[2pt]
+Zhejiang University, Hangzhou, China\\[2pt]
+\href{mailto:3230100923@zju.edu.cn}{3230100923@zju.edu.cn} \quad
+\href{https://styokuok.github.io/main/projects/turtlebot-navigation/}{Project page}
+\end{center}
+
+\begin{abstract}
+This project develops and evaluates an autonomous-navigation workflow for a physical TurtleBot using ROS and Nav2. A standard Nav2 planner provides the system baseline, while a custom RRT* global planner exposes the planning logic needed to study sampling, collision checking, rewiring, and path publication. The implementation connects map-aware planning to RViz inspection and real-robot execution. This public brief describes the system and demonstrated functionality without reproducing the original course report.
+\end{abstract}
+
+\section*{System design}
+The custom planner operates on the navigation cost map and builds a collision-aware search tree from the current robot pose toward a requested goal. The main components are:
+\begin{itemize}
+  \item \textbf{Sampling and expansion:} goal-biased sampling and fixed-step expansion balance broad exploration with progress toward the target.
+  \item \textbf{Map-aware collision checks:} KD-tree distance queries and edge sampling account for occupied cells, map resolution, robot footprint, and configurable obstacle inflation.
+  \item \textbf{RRT* refinement:} best-parent selection and local rewiring reduce accumulated path cost as the tree grows.
+  \item \textbf{ROS integration:} the selected route is backtracked, interpolated, converted to a ROS path, published to the global-path topic, and inspected in RViz before execution.
+\end{itemize}
+
+\section*{Validation}
+The navigation workflow was tested in both screen-recorded planning sessions and physical-robot trials. The public video intentionally presents the sequence in that order of evidence: a Nav2 physical run is followed by its corresponding screen recording, then the clip loops. The project demonstrates an end-to-end connection between a standard navigation baseline, an inspectable custom planner, and real-platform execution.
+
+\vfill
+{\footnotesize \copyright\ 2026 Zhenghe Guo. All rights reserved. Portfolio review copy; redistribution, reposting, or derivative publication requires prior written permission. The original experiment report and implementation-specific course materials are not distributed.}
+
+\end{document}

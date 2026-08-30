@@ -1,0 +1,45 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.78in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\definecolor{accent}{HTML}{1F5A70}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.25em,itemsep=2pt,topsep=3pt}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries DYNAMO: Dynamics-Aware Motion Optimization for Unitree G1 Dance Performance}\\[7pt]
+{\large Zhenghe Guo}\\[2pt]
+Zhejiang University, Hangzhou, China\\[2pt]
+\href{mailto:3230100923@zju.edu.cn}{3230100923@zju.edu.cn} \quad
+\href{https://styokuok.github.io/main/projects/dynamo/}{Project page}
+\end{center}
+
+\begin{abstract}
+DYNAMO is a motion-planning framework for translating an expressive dance reference into a stable and executable whole-body trajectory for a Unitree G1 humanoid. Visually plausible reference motion does not automatically satisfy contact, balance, joint, motor, or energy constraints. DYNAMO therefore treats motion adaptation as a coupled dynamics and trajectory-optimization problem rather than direct pose replay. This public brief summarizes the problem formulation, functional components, and visualization without releasing the competition solver or tuned implementation details.
+\end{abstract}
+
+\section*{Problem and output}
+The framework takes a candidate motion, its intended support sequence, robot geometry, joint and motor ranges, and execution timing as high-level inputs. It produces a coordinated trajectory that preserves the motion's recognizable structure while making support exchange and actuator demand physically consistent. Candidate timings and amplitudes can then be compared using the same feasibility and energy criteria.
+
+\section*{Method summary}
+\begin{itemize}
+  \item \textbf{Whole-body dynamics:} Lagrangian rigid-body and centroidal quantities connect joint movement, center-of-mass travel, ground reaction, and support.
+  \item \textbf{Contact-aware planning:} single- and double-support phases are represented explicitly so foot exchange is optimized as part of the motion.
+  \item \textbf{Balance and feasibility:} zero-moment-point support conditions, kinematic ranges, and velocity and torque bounds prevent unstable or infeasible commands.
+  \item \textbf{Motion adaptation:} tracking objectives retain the reference's overall character while allowing coordinated changes required by the robot.
+  \item \textbf{Energy-aware comparison:} motor work, regenerative effects, and thermal costs provide a consistent basis for comparing feasible candidate trajectories.
+\end{itemize}
+
+\section*{Public visualization and result}
+The accompanying interactive visualization shows joint coordination, support exchange, center-of-mass motion, and the relationship between the zero-moment point and the active support region. Motion amplitude and playback speed can be varied to make these relationships visible. The work received a \textbf{National First Prize (top 2\%)} in the 2025 Asia and Pacific Mathematical Contest in Modeling (APMCM).
+
+\vfill
+{\footnotesize \copyright\ 2026 Zhenghe Guo. All rights reserved. Portfolio review copy; redistribution, reposting, or derivative publication requires prior written permission. Competition-specific solver implementation, tuned parameters, and the full report are not distributed.}
+
+\end{document}
