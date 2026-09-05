@@ -19,9 +19,13 @@ latest_posts:
 
 I am a final-year undergraduate at [Zhejiang University](https://www.zju.edu.cn/) and currently a research intern at [Inception3D](http://www.inception3d.fun/), led by [Prof. Anpei Chen](https://www.westlake.edu.cn/faculty/anpei-chen.html). I build physical systems that sense, reconstruct, and act under incomplete observations.
 
+My major is Agricultural Engineering, an interdisciplinary program focused on mechanical engineering, automation, and physical systems.
+
 My primary research interest is learning representations and world models for physical agents. I am especially interested in mathematical representations that capture fluids and deformable objects, where geometry alone is not enough to describe how a scene will evolve.
 
 Fluids and deformable objects are a demanding testbed for this question, not its boundary. My current projects also span capture-anchored 3D reconstruction, stereo hand-object perception, robot localization, and model-based control. I am interested in extending the same representation questions to generalist visuomotor and vision-language-action policies. See the [Research Statement]({{ '/research/' | relative_url }}) for details.
+
+I am actively looking for PhD, research, and collaboration opportunities in physical AI, world models, and robotics.
 
 <div class="profile-links">
 <a href="#publications">Publications</a> · <a href="#projects">Projects</a> · <a href="#education">Education</a> · <a href="#awards">Awards</a> · <a href="https://scholar.google.com/citations?user=aaaoBoEAAAAJ&hl=en">Google Scholar</a> · <a href="https://www.researchgate.net/profile/Zhenghe-Guo-2324807179/">ResearchGate</a> · <a href="https://www.linkedin.com/in/zhenghe-guo-318948378/">LinkedIn</a> · <a href="{{ '/assets/pdf/Zhenghe_Guo_CV.pdf' | relative_url }}">CV</a> · <a href="{{ '/research/' | relative_url }}">Research Statement</a>
