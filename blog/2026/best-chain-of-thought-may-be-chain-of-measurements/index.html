@@ -1,0 +1,187 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> The Best Chain of Thought for a Robot May Be a Chain of Measurements | Zhenghe Guo </title> <meta name="author" content="Zhenghe Guo"> <meta name="description" content="Why embodied reasoning should decide what to observe before it decides what to do."> <meta name="keywords" content="embodied systems, spatial intelligence, world models, state representation, planning, robotics, Zhenghe Guo"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/main/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.css" integrity="sha256-zTN0r+0OKaIv2xqeNNIYxNk0pWJ6+IqPGc1iDgVzWF0=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/main/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/main/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://styokuok.github.io/main/blog/2026/best-chain-of-thought-may-be-chain-of-measurements/"> <script src="/main/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/main/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/main/"> Zhenghe Guo </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/main/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/main/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/main/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/main/research/">Research Statement </a> </li> <li class="nav-item active"> <a class="nav-link" href="/main/blog/">blog </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="row"> <div class="col-sm-3"> <nav id="toc-sidebar" class="sticky-top toc toc-sidebar" aria-label="Table of contents" data-toc-collapse="expanded" data-toc-collapse-depth=""></nav> </div> <div class="col-sm-9"> <div class="post"> <header class="post-header"> <h1 class="post-title">The Best Chain of Thought for a Robot May Be a Chain of Measurements</h1> <p class="post-meta"> Created on September 17, 2026 by Zhenghe Guo </p> <p class="post-tags"> <a href="/main/blog/2026"> <i class="fa-solid fa-calendar fa-sm"></i> 2026 </a>   ·   <a href="/main/blog/tag/robotics"> <i class="fa-solid fa-hashtag fa-sm"></i> robotics</a>   <a href="/main/blog/tag/embodied-ai"> <i class="fa-solid fa-hashtag fa-sm"></i> embodied-ai</a>   <a href="/main/blog/tag/reasoning"> <i class="fa-solid fa-hashtag fa-sm"></i> reasoning</a>   <a href="/main/blog/tag/active-perception"> <i class="fa-solid fa-hashtag fa-sm"></i> active-perception</a>   ·   <a href="/main/blog/category/research-notes"> <i class="fa-solid fa-tag fa-sm"></i> research-notes</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <p><em>Why embodied reasoning should decide what to observe before it decides what to do</em></p> <p>A robot sees a cup near the edge of a table. It spends a second describing the scene, another second identifying the cup, another decomposing the task, and another explaining that the handle appears reachable. By the time it acts, a person has moved the cup.</p> <p>The reasoning trace is coherent. The action is wrong. Worse, the coherence can make the failure look intelligent.</p> <p>Chain-of-thought has an obvious appeal in robotics. It promises more than an action token: a robot can name objects, decompose a long task, expose mistakes, accept language corrections, and transfer semantic knowledge from vision-language models into control. Recent embodied chain-of-thought systems show that some of this promise is real.</p> <p>But embodiment changes the economics of reasoning. In a static math problem, an extra token does not make the premises older. In a robot, reasoning consumes wall-clock time while the world continues. The initial image may be ambiguous; the camera may be occluded; contact may change the object; a cached plan may outlive its scene.</p> <p>This suggests a different question from “How should a robot reason longer?”</p> <blockquote> <p>When should the output of reasoning be another action—and when should it be another measurement?</p> </blockquote> <p>The best chain of thought for a robot may sometimes be a chain of epistemic actions: lean left, look behind the occluder, touch lightly, verify the grasp, then commit.</p> <h2 id="first-the-case-for-embodied-chain-of-thought-is-strong">First, the case for embodied chain of thought is strong</h2> <p>It is tempting to dismiss verbal reasoning as decorative narration. The evidence does not support such a simple view.</p> <p><a href="https://arxiv.org/abs/2407.08693" rel="external nofollow noopener" target="_blank">Robotic Control via Embodied Chain-of-Thought Reasoning</a>, usually called ECoT, augments a vision-language-action policy with structured steps such as task interpretation, subtask planning, object grounding, gripper localization, and motion primitives. On its aggregate real-robot evaluation, ECoT improves over Octo, OpenVLA, RT-2-X, and a naive CoT baseline, including under an out-of-distribution viewpoint. The per-task table is not uniformly positive—there are tasks where a baseline wins—but the aggregate gain is substantial.</p> <p>The most convincing part is not the leaderboard. It is intervention. On selected difficult tasks, a human can interrupt once with a correction such as “the screwdriver is in the back right corner” or “release the mushroom now.” The corrected reasoning is fed back into the policy. ECoT’s success rises from 32% to 80%, a 48-percentage-point gain, larger than the corresponding gains for non-CoT baselines.</p> <p>This reveals a real advantage of language reasoning: it creates an addressable interface. A human can repair a belief or subgoal without teleoperating every joint.</p> <p>So the interesting critique is not “CoT does nothing.” It is more specific: a trace can be useful as a training signal, an interface, and a temporal abstraction without being a faithful or sufficiently fresh account of the controller’s actual decision.</p> <p>Those roles are often conflated.</p> <h2 id="a-reasoning-trace-can-improve-the-policy-without-explaining-it">A reasoning trace can improve the policy without explaining it</h2> <p>The most direct evidence comes from <a href="https://arxiv.org/abs/2607.04681" rel="external nofollow noopener" target="_blank">Do Vision-Language-Action Models Mean What They Say?</a>. The authors compare supervised and RL-post-trained versions of an autonomous-driving VLA. If better trajectories came from better verbal reasoning, improvements should move together. They often do not. RL can reduce trajectory error while the accompanying rationale stays unchanged, remains ungrounded, or is judged worse. The action policy appears able to improve around the trace.</p> <p>The paper then constructs 66 counterfactual driving scenes by inserting hazards such as roadway fires, contraflow vehicles, or fallen cyclists. It asks whether the language notices the hazard, whether the waypoints react, and whether the two responses are causally aligned. A faithfulness-trained planner performs best, but the absolute joint scores remain low. One qualitative failure is exactly the kind that should worry us: a model says it will slow down for a cyclist while its trajectory increases speed.</p> <p>This is not merely a problem of dishonest explanations. A robot’s words can become an internal control interface. If later modules, human supervisors, or safety checks rely on the trace, an unfaithful sentence is state corruption.</p> <p><a href="https://arxiv.org/abs/2603.12717" rel="external nofollow noopener" target="_blank">Altered Thoughts, Altered Actions</a> complicates the picture further. Perturbing a reasoning VLA’s CoT does affect actions, but selectively. Swapping entity references is damaging; changing word order, some spatial terms, or generic tokens matters much less. The action decoder appears to use the trace as a structured carrier of object identity while relying on vision for other variables. In some instruction attacks, the reasoning stage amplifies the error: a corrupted instruction produces a wrong object reference, then the action decoder faithfully executes the wrong plan.</p> <p>The conclusion is not that CoT is causal or non-causal. It can be partially causal in a highly nonuniform way. “The model generated a detailed rationale” tells us almost nothing about which parts of that rationale the action actually depends on.</p> <h2 id="fast-ecot-accidentally-reveals-what-the-robot-repeats-to-itself">Fast ECoT accidentally reveals what the robot repeats to itself</h2> <p>Efficiency work exposes another hidden fact: much embodied reasoning is temporally redundant.</p> <p><a href="https://arxiv.org/abs/2506.07639" rel="external nofollow noopener" target="_blank">Fast ECoT</a> measures how often ECoT’s reasoning stages change between steps. High-level planning updates by only 8.4% on average, meaning 91.6% of its content is reused. Caching high-level reasoning for five frames while refreshing low-level content can slightly improve success, apparently by smoothing noisy fluctuations. But making both high- and low-level reasoning stale drops success, and never updating them collapses performance to 35%. The failures are intuitive: the robot completes a grasp but does not notice that it should transition to placement.</p> <p>The original ECoT paper reports a similarly revealing speed experiment. Regenerating the full chain every step reaches 63% success on a small task subset. Freezing it for five steps raises success to 72% while speeding inference by 24%; asynchronous reasoning reaches 65% with a 40% speed-up but doubles compute. Fast ECoT later reports that temporal mismatch in its asynchronous variant also lowers action faithfulness.</p> <p>This tells us that a robot does not need one homogeneous “thought rate.” Semantic plans, object bindings, contact state, and motor corrections live on different clocks. A high-level plan may remain valid for seconds. A slip signal can expire in milliseconds. Turning both into a single autoregressive paragraph forces the control system to serialize variables that should update asynchronously.</p> <p>The design question should therefore be: which belief changed enough to justify recomputation?</p> <p>That is already closer to state estimation than to essay writing.</p> <h2 id="latent-reasoning-weakens-the-case-that-words-are-the-essential-computation">Latent reasoning weakens the case that words are the essential computation</h2> <p><a href="https://arxiv.org/abs/2602.01166" rel="external nofollow noopener" target="_blank">LaRA-VLA</a> takes the next step. It uses a curriculum to move from explicit textual and visual reasoning into continuous latent reasoning. In its ablations, explicit textual CoT provides only a marginal gain over no CoT. Latent textual reasoning gives a much larger improvement, and adding latent visual prediction performs best. The model reports 135 ms inference and up to a 90% latency reduction compared with explicit CoT approaches.</p> <p>There are caveats: latent tokens are harder to inspect, the paper constrains their number to avoid collapse, and benchmark gains do not prove an interpretable world model. Still, the result changes the burden of proof. If a compact predictive latent produces better actions faster than a paragraph, the paragraph may have been scaffolding for learning rather than the runtime substrate of intelligence.</p> <p>This distinction matters because verbal CoT is unusually easy to evaluate aesthetically. A trace with object names, spatial relations, and a sensible plan looks thoughtful. A latent state cannot impress a reader. It must earn its value through prediction and control.</p> <p>The risk is that embodied AI inherits a language-model habit: judging the quality of internal computation by the fluency of its externalization.</p> <h2 id="reasoning-on-a-stale-image-is-not-closed-loop-intelligence">Reasoning on a stale image is not closed-loop intelligence</h2> <p>Suppose the initial observation does not show whether the cup handle is blocked by another object. A long CoT can enumerate possibilities, recall common cup geometry, and produce a confident grasp plan. It cannot reveal the hidden handle.</p> <p>The robot has three options:</p> <ol> <li>choose an action under uncertainty;</li> <li>spend more compute reasoning about the same pixels;</li> <li>acquire evidence that changes the belief.</li> </ol> <p>Only the third changes the information set.</p> <p>Classical active perception has studied this for decades, but its lesson is easy to lose inside modern VLA pipelines. <a href="https://arxiv.org/abs/2310.00433" rel="external nofollow noopener" target="_blank">ActPerMoMa</a>, for example, selects mobile-manipulator motions by balancing information gain for scene reconstruction with grasp reachability. In simple scenes, a naive strategy is already excellent: 95.2% success versus 95.4% for the active method. Active perception is not automatically worth its cost. In complex scenes with hard grasps, the difference becomes large: 61.8% success for ActPerMoMa, compared with 43.8% for the naive strategy and 47.2% for a next-best-view baseline.</p> <p>This boundary is crucial. “Always gather another observation” is as shallow as “always think longer.” Measurements cost motion, time, energy, and sometimes safety. The value of active perception rises when uncertainty is decision-relevant and the next observation can resolve it.</p> <p>The right controller needs a stopping rule: act when the expected value of information falls below the cost of acquiring it.</p> <h2 id="the-missing-primitive-is-an-epistemic-action">The missing primitive is an epistemic action</h2> <p>Most VLA action spaces treat camera motion, touch, and manipulation as ordinary task actions. But some actions are chosen primarily to change what the robot knows.</p> <p>Moving the wrist camera five centimeters may not advance the manipulation task geometrically, yet it can reveal whether two objects overlap. Closing the gripper until first contact may not be the grasp itself; it can estimate pose and compliance. Nudging an object reversibly may expose whether it is free, attached, or heavier than expected. Asking a person “the blue cup or the green one?” is another measurement, taken through language.</p> <p>A useful reasoning loop would therefore look less like</p> <p>[ \text{image} \rightarrow \text{long rationale} \rightarrow \text{action} ]</p> <p>and more like</p> <p>[ \text{observe} \rightarrow \text{identify decision-relevant uncertainty} \rightarrow \text{choose measurement} \rightarrow \text{update belief} \rightarrow \text{act when sufficiently resolved}. ]</p> <p>The reasoning product is not necessarily a sentence. It may be a distribution over hypotheses, a predicted observation under a candidate probe, or a trigger saying that the current plan is stale.</p> <p>This also offers a stricter meaning of corrigibility. A model is not corrigible merely because a human can edit its prose. It is corrigible if contradictory evidence causes its belief and action to change. A fluent trace that absorbs every new observation into the original story is the opposite: coherence has become inertia.</p> <h2 id="a-fair-experiment-tokens-versus-measurements">A fair experiment: tokens versus measurements</h2> <p>The claim can be tested without deciding in advance that active perception is superior.</p> <p>Give two agents the same wall-clock budget, compute budget, initial observation, and control authority.</p> <p>Agent A may spend the extra budget on more reasoning tokens, larger test-time search, or self-consistency over action plans.</p> <p>Agent B may spend it on one additional measurement: a changed viewpoint, a tactile probe, a short reversible motion, or a clarification question. Its reasoning model remains smaller or shorter.</p> <p>Evaluate not only task success but:</p> <ul> <li>calibration before and after the extra budget;</li> <li>recovery from an incorrect initial belief;</li> <li>performance when the scene changes during inference;</li> <li>frequency of irreversible mistakes;</li> <li>information gained per second of latency;</li> <li>whether confidence responds when evidence is removed;</li> <li>whether the chosen measurement separates the agent’s own leading hypotheses.</li> </ul> <p>The most revealing cases are those where more text and more evidence disagree. If extra reasoning repeatedly rationalizes the initial perception while one camera move corrects it, the bottleneck was observability. If measurements add little but semantic decomposition solves the task, the bottleneck was abstraction. If both help, the architecture should allocate budget adaptively.</p> <p>Current comparisons usually keep the observation fixed and vary the reasoning machinery. They can establish that one policy uses a fixed input better. They cannot establish that reasoning was the best use of the robot’s next 500 milliseconds.</p> <h2 id="when-language-reasoning-should-remain-explicit">When language reasoning should remain explicit</h2> <p>There are several strong reasons not to replace all CoT with opaque latent state.</p> <p>Long-horizon tasks benefit from stable semantic plans. Human collaboration benefits from an editable interface. Safety review benefits when a system can state which object, rule, or subgoal it is using. Language can transfer abstract knowledge across embodiments whose low-level actions differ. ECoT’s intervention experiment demonstrates this value directly.</p> <p>The important condition is that the language trace be treated as a control surface with measured causal influence, not a free explanation attached to an action. We should know which fields affect the decoder, how stale they are allowed to become, and what sensory event invalidates them. A plan that says “place the cup” may persist. A field that says “gripper is aligned” should be refreshed from geometry or contact, not cached because the sentence still sounds plausible.</p> <p>What would weaken the chain-of-measurements argument? Dynamic, partially observed benchmarks where additional sensing actions are available, yet appropriately compute-scaled CoT consistently beats measurement-seeking policies under equal latency and energy budgets. That would show that the missing information can usually be supplied by learned priors. We need those comparisons.</p> <h2 id="from-readable-thoughts-to-testable-beliefs">From readable thoughts to testable beliefs</h2> <p>The current embodied-reasoning wave has made robots easier to talk about. They can narrate subtasks, point to objects, and justify motions in a vocabulary humans understand. That is valuable.</p> <p>The next step is to make their beliefs easier to challenge.</p> <p>A reasoning system should reveal not only what it plans to do, but what observation would make it change the plan. It should know when a phrase is merely a prior, when a visual fact is stale, and when the cheapest route to a better action is to look again.</p> <p>The most intelligent sentence a robot can produce may sometimes be:</p> <blockquote> <p>I cannot distinguish these two states from here. I need another measurement.</p> </blockquote> <p>And then it should stop talking and move the camera.</p> <h2 id="primary-reading">Primary reading</h2> <ul> <li><a href="https://arxiv.org/abs/2407.08693" rel="external nofollow noopener" target="_blank">Robotic Control via Embodied Chain-of-Thought Reasoning</a></li> <li><a href="https://arxiv.org/abs/2506.07639" rel="external nofollow noopener" target="_blank">Fast ECoT: Efficient Embodied Chain-of-Thought via Thoughts Reuse</a></li> <li><a href="https://arxiv.org/abs/2602.01166" rel="external nofollow noopener" target="_blank">Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models</a></li> <li><a href="https://arxiv.org/abs/2607.04681" rel="external nofollow noopener" target="_blank">Do Vision-Language-Action Models Mean What They Say? On the Role of Faithfulness in Embodied Reasoning</a></li> <li><a href="https://arxiv.org/abs/2603.12717" rel="external nofollow noopener" target="_blank">Altered Thoughts, Altered Actions: Probing Chain-of-Thought Vulnerabilities in VLA Robotic Manipulation</a></li> <li><a href="https://arxiv.org/abs/2310.00433" rel="external nofollow noopener" target="_blank">Active-Perceptive Motion Generation for Mobile Manipulation</a></li> </ul> <hr> <p><em>© 2026 Zhenghe Guo. Please cite and link to this page rather than reproducing the article in full.</em></p> </div> </article> <br> <hr> <br> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <ul class="list-disc pl-7 my-3 space-y-2 marker:text-[var(--global-theme-color)]"> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/main/blog/2026/better-reconstruction-agent-can-be-less-faithful/">A Better Reconstruction Agent Can Be Less Faithful</a> </li> </ul> </div> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Zhenghe Guo. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/main/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/main/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/main/assets/al_math/js/mathjax-setup.js"></script> <script src="/main/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script defer src="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.min.js" integrity="sha256-lo/r+jQ81wWrxdIiiiEEd538z4+dTJTt+leOuAS7GCw=" crossorigin="anonymous"></script> <script src="/main/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/main/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/main/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/main/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script defer src="https://cloud.umami.is/script.js" data-website-id="37676d90-adee-445f-adc3-682aaab9ea27"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/main/assets/al_img_tools/js/zoom.js"></script> <script defer src="/main/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/main/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/main/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/main/";
+    },
+  },{id: "nav-publications",
+          title: "publications",
+          description: "Publications grouped by research direction.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/main/publications/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Technical project reports with videos, code, and reproducible resources.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/main/projects/";
+          },
+        },{id: "nav-research-statement",
+          title: "Research Statement",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/main/research/";
+          },
+        },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/main/blog/";
+          },
+        },{id: "post-the-best-chain-of-thought-for-a-robot-may-be-a-chain-of-measurements",
+        
+          title: "The Best Chain of Thought for a Robot May Be a Chain of...",
+        
+        description: "Why embodied reasoning should decide what to observe before it decides what to do.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/main/blog/2026/best-chain-of-thought-may-be-chain-of-measurements/";
+          
+        },
+      },{id: "post-a-better-reconstruction-agent-can-be-less-faithful",
+        
+          title: "A Better Reconstruction Agent Can Be Less Faithful",
+        
+        description: "When stronger priors remove visible defects faster than they recover evidence.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/main/blog/2026/better-reconstruction-agent-can-be-less-faithful/";
+          
+        },
+      },{id: "projects-zjudancer-robocup-humanoid-vision-amp-localization",
+          title: 'ZJUDancer RoboCup Humanoid Vision &amp;amp; Localization',
+          description: "On-robot perception, localization, and odometry integration; RoboCup China Open 2026 First Prize and Runner-up.",
+          section: "Projects",handler: () => {
+              window.location.href = "/main/projects/robocup-vision/";
+            },},{id: "projects-turtlebot-autonomous-navigation-with-rrt",
+          title: 'TurtleBot Autonomous Navigation with RRT*',
+          description: "Nav2 baseline and a custom collision-aware RRT* global planner on a real mobile robot.",
+          section: "Projects",handler: () => {
+              window.location.href = "/main/projects/turtlebot-navigation/";
+            },},{id: "projects-dynamo-unitree-g1-motion-planning",
+          title: 'DYNAMO · Unitree G1 Motion Planning',
+          description: "Dynamics-aware humanoid dance optimization; Asia and Pacific Mathematical Contest in Modeling (APMCM) 2025 National First Prize, top 2%.",
+          section: "Projects",handler: () => {
+              window.location.href = "/main/projects/dynamo/";
+            },},{id: "projects-thu-air-stereo-hand-object-handover",
+          title: 'THU AIR Stereo Hand-Object Handover',
+          description: "Stereo hand-object perception and embodied handover infrastructure.",
+          section: "Projects",handler: () => {
+              window.location.href = "/main/projects/thuair-handover/";
+            },},{id: "projects-roboarm-vision-guided-gomoku-manipulation",
+          title: 'RoboARM · Vision-Guided Gomoku Manipulation',
+          description: "A ROS perception-decision-manipulation loop for a six-axis arm playing Gomoku.",
+          section: "Projects",handler: () => {
+              window.location.href = "/main/projects/chessbot/";
+            },},{id: "projects-hybrid-qubo-ldpc-decoder",
+          title: 'Hybrid QUBO LDPC Decoder',
+          description: "Coherent-Ising-machine-assisted LDPC decoding; 2025 national First Prize and Runner-up.",
+          section: "Projects",handler: () => {
+              window.location.href = "/main/projects/quantum-ldpc/";
+            },},{id: "projects-zhongkong-cup-autonomous-manipulation",
+          title: 'Zhongkong Cup Autonomous Manipulation',
+          description: "Embedded line following and scripted arm manipulation; Zhongkong Cup Second Prize.",
+          section: "Projects",handler: () => {
+              window.location.href = "/main/projects/zhongkong/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%33%32%33%30%31%30%30%39%32%33@%7A%6A%75.%65%64%75.%63%6E", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/StyoKuok", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=aaaoBoEAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-researchgate',
+        title: 'ResearchGate',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.researchgate.net/profile/Zhenghe-Guo-2324807179/", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/zhenghe-guo-318948378", "_blank");
+        },
+      },{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/main/assets/pdf/Zhenghe_Guo_CV.pdf", "_blank");
+        },
+      },{
+        id: 'social-research_statement',
+        title: 'Research_statement',
+        section: 'Socials',
+        handler: () => {
+          window.open("/main/research/", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/main/assets/al_search/js/shortcut-key.js"></script> </body> </html>

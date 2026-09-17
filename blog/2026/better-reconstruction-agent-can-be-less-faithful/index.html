@@ -1,0 +1,187 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> A Better Reconstruction Agent Can Be Less Faithful | Zhenghe Guo </title> <meta name="author" content="Zhenghe Guo"> <meta name="description" content="When stronger priors remove visible defects faster than they recover evidence."> <meta name="keywords" content="embodied systems, spatial intelligence, world models, state representation, planning, robotics, Zhenghe Guo"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/main/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.css" integrity="sha256-zTN0r+0OKaIv2xqeNNIYxNk0pWJ6+IqPGc1iDgVzWF0=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/main/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/main/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://styokuok.github.io/main/blog/2026/better-reconstruction-agent-can-be-less-faithful/"> <script src="/main/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/main/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/main/"> Zhenghe Guo </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/main/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/main/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/main/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/main/research/">Research Statement </a> </li> <li class="nav-item active"> <a class="nav-link" href="/main/blog/">blog </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="row"> <div class="col-sm-3"> <nav id="toc-sidebar" class="sticky-top toc toc-sidebar" aria-label="Table of contents" data-toc-collapse="expanded" data-toc-collapse-depth=""></nav> </div> <div class="col-sm-9"> <div class="post"> <header class="post-header"> <h1 class="post-title">A Better Reconstruction Agent Can Be Less Faithful</h1> <p class="post-meta"> Created on September 17, 2026 by Zhenghe Guo </p> <p class="post-tags"> <a href="/main/blog/2026"> <i class="fa-solid fa-calendar fa-sm"></i> 2026 </a>   ·   <a href="/main/blog/tag/3d-reconstruction"> <i class="fa-solid fa-hashtag fa-sm"></i> 3d-reconstruction</a>   <a href="/main/blog/tag/embodied-ai"> <i class="fa-solid fa-hashtag fa-sm"></i> embodied-ai</a>   <a href="/main/blog/tag/agents"> <i class="fa-solid fa-hashtag fa-sm"></i> agents</a>   <a href="/main/blog/tag/evaluation"> <i class="fa-solid fa-hashtag fa-sm"></i> evaluation</a>   ·   <a href="/main/blog/category/research-notes"> <i class="fa-solid fa-tag fa-sm"></i> research-notes</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <p><em>When stronger priors remove visible defects faster than they recover evidence</em></p> <p>There is a familiar kind of failure in classical 3D reconstruction: a chair leg disappears, a wall becomes noisy, or an unseen surface remains a hole. The result looks bad, but it is epistemically honest. The damage is visible exactly where the measurements were weak.</p> <p>Now give the system an asset library, a text-to-3D generator, Blender, a vision-language model, a collision checker, and twenty chances to inspect and revise its own rendering. The hole disappears. The chair acquires four clean legs. The room becomes walkable. A human evaluator prefers the result.</p> <p>Did reconstruction improve?</p> <p>Sometimes yes. A structural prior can recover what a noisy sensor missed. Multi-step decomposition can prevent a monolithic model from forgetting small parts. Physical constraints can reject impossible geometry. But another thing can happen at the same time: the system becomes much better at replacing uncertainty with a coherent guess.</p> <p>The uncomfortable property of agentic reconstruction is that every gain in plausibility can make evidential failure harder to see.</p> <p>This is not an argument against generative priors or 3D agents. It is an argument that “better 3D” now hides three different questions:</p> <ol> <li>Is the output internally consistent?</li> <li>Is it plausible to a human or a foundation-model judge?</li> <li>Is it supported by the input evidence?</li> </ol> <p>An agent can improve the first two while leaving the third unchanged—or even making it less legible.</p> <h2 id="the-word-reconstruction-now-covers-incompatible-contracts">The word “reconstruction” now covers incompatible contracts</h2> <p>Consider three tasks that increasingly share the same project-page vocabulary.</p> <p>In measurement reconstruction, multiple images or depth observations constrain a scene. The desired output should explain those measurements, and uncertainty should grow where coverage is weak.</p> <p>In image-conditioned asset creation, a single image is used to produce a useful editable 3D object. Unseen surfaces must be invented. Fidelity usually means that selected renderings resemble the input, not that every vertex has observational support.</p> <p>In scene generation, a prompt or reference image specifies intent. The system retrieves or generates assets, arranges them, enforces collision and stability constraints, and optimizes the result for semantics, aesthetics, or functionality.</p> <p>All three are legitimate. The problem begins when their evidence standards are allowed to drift into one another.</p> <p><a href="https://arxiv.org/abs/2505.20129" rel="external nofollow noopener" target="_blank">Agentic 3D Scene Generation with Spatially Contextualized VLMs</a>, for example, is explicit about being a generation framework. It constructs spatial context, generates individual assets, plans a layout, verifies environment setup, and makes ergonomic adjustments. It evaluates text alignment with CLIP and BLIP, aesthetic quality, functional plausibility, image similarity, and, in a controlled setting, Chamfer distance and IoU. Its auto-verification improves water, lighting, atmosphere, scale, and placement. These are useful capabilities.</p> <p>But notice how many meanings of “faithful” are present. A Victorian apartment can be faithful to a textual style, a reference composition, common-sense ergonomics, and measured geometry in different degrees. Improving one does not logically improve the others.</p> <p>This is why a beautiful result is not enough to tell us what the agent reconstructed. We also need to know what it was allowed to invent.</p> <h2 id="an-agent-optimizes-the-feedback-it-can-see">An agent optimizes the feedback it can see</h2> <p>The most useful way to understand a 3D agent is not as an intelligent wrapper around a reconstruction model. It is as an optimizer with a peculiar set of sensors and actuators.</p> <p>Its actuators may include retrieving an asset, editing Blender code, regenerating a mesh, moving an object, changing a material, running a physics simulation, or asking a VLM to critique a rendering. Its sensors may include a rendered RGB view, a collision report, CLIP similarity, a language-model judgment, or the fact that code executed without error.</p> <p>The agent will become good at satisfying those feedback channels. Nothing guarantees that those channels are equivalent to the original evidence.</p> <p><a href="https://arxiv.org/abs/2505.02836" rel="external nofollow noopener" target="_blank">Scenethesis</a> is a clean example. It combines language-based coarse planning, visual layout refinement, physics-aware optimization, and a scene judge. Its metrics include CLIP, BLIP, VQA, human and GPT-4o judgments of layout realism, collision and stability rates, reachability, and walkability. This is a thoughtful evaluation for interactive scene generation. Yet almost every metric rewards a property of the final scene. None, by itself, asks whether a particular mug, support surface, or occluded chair leg came from the input rather than the prior.</p> <p>Again, that is not a criticism of the stated task. It is a warning about interpretation. If the output is later used as a “digital twin,” the contract has changed. A simulator-ready room is not automatically an evidence-preserving copy of a room.</p> <p>The distinction is easiest to see through a counterfactual. Remove half of the input views. A faithful reconstruction system should become less certain in predictable regions. A powerful generative agent may instead preserve visual quality by leaning harder on its asset generator and scene prior. If the headline metrics barely change, that stability could be evidence of robustness—or evidence that the output was never strongly tied to the measurements.</p> <p>Without an input-removal test, those explanations are confounded.</p> <h2 id="more-reasoning-steps-do-not-create-more-measurements">More reasoning steps do not create more measurements</h2> <p><a href="https://arxiv.org/abs/2606.10478" rel="external nofollow noopener" target="_blank">3D-CoS</a> provides an unusually revealing controlled comparison. The task is to generate executable Blender code from a single image. The paper compares single-call generation, explicit planning, retrieval-augmented generation, few-shot prompting, and a component-wise agent. The agent first decomposes an object into parts, writes and executes code for each part, repairs failures, and assembles the object.</p> <p>The part-wise agent improves what the paper calls part-balanced recovery. For some models, it yields the best structural-balance metric and strong Chamfer distance. Yet it is not uniformly best. Separately generated parts disagree in scale, placement, and inter-part relations. RAG wins some visible-view metrics; few-shot prompting wins others. A dedicated model, InstantMesh, still leads the agent on aggregate geometry-centric reconstruction metrics.</p> <p>This is more informative than a simple “agents improve reconstruction” result. Decomposition changes the error distribution. A one-shot model may omit a leg; a part-wise agent remembers the leg but places it at the wrong scale. The agent has improved component coverage without necessarily improving the global explanation of the image.</p> <p>And there is a deeper limit. Every agent paradigm in this experiment still begins from one image. Planning, RAG, retries, and execution can rearrange prior knowledge. They cannot directly observe the back of the object. When the result there looks reasonable, the system has made a good prediction, not recovered missing evidence.</p> <p>That prediction may be exactly what the application wants. The danger is not invention. The danger is invention without provenance.</p> <h2 id="verification-can-become-prior-agreement">Verification can become prior agreement</h2> <p>“But the agent verifies its output” sounds stronger than it often is.</p> <p>Verification is only independent when the verifier has access to evidence or failure modes that the generator does not share. If a VLM proposes a scene and another invocation of a similar VLM judges a rendering, both may prefer the same culturally typical room layout. Iteration then sharpens agreement with a shared prior.</p> <p>The loop can look like this:</p> <p>[ \text{generate} \rightarrow \text{render} \rightarrow \text{judge plausibility} \rightarrow \text{revise}. ]</p> <p>For scene authoring, that is productive. For reconstruction, a different loop is needed:</p> <p>[ \text{hypothesize} \rightarrow \text{predict measurement} \rightarrow \text{compare with observation} \rightarrow \text{retain or reject}. ]</p> <p>The difference is the object of verification. Does the verifier ask “does this look like a bedroom?” or “would this exact geometry have produced the observed pixels, depths, contacts, and camera trajectory?”</p> <p><a href="https://arxiv.org/abs/2603.12238" rel="external nofollow noopener" target="_blank">SceneAssistant</a> unintentionally supplies a useful case study. Its visual-feedback agent outperforms baselines in human-rated layout correctness, object quality, and preference. Collision feedback is necessary; without it, raw rendered views do not reliably expose interpenetration. Yet the limitations section reports that the agent often underuses its camera-moving tools even when the scene is visually ambiguous. It can be overconfident, fail to notice malformed assets, manipulate too many objects in one step, and require several independent runs before a satisfactory result appears.</p> <p>That combination matters. The agent has the ability to obtain a better view but often prefers to continue editing from inadequate evidence. “More agency” has increased the action space, not guaranteed epistemic behavior.</p> <p>The natural fix is not merely a stronger visual critic. It is to reward the agent for resolving uncertainty: move the camera, request another image, preserve competing hypotheses, or explicitly mark an element as unsupported.</p> <h2 id="the-missing-object-is-an-evidence-ledger">The missing object is an evidence ledger</h2> <p>Traditional reconstruction stores geometry, appearance, and perhaps per-point uncertainty. An agentic pipeline needs something more explicit: a record of why each part of the scene exists.</p> <p>Call it an evidence ledger. For every object, surface, or relation, the system should be able to distinguish:</p> <ul> <li>directly measured from one or more observations;</li> <li>triangulated or optimized from geometry;</li> <li>inferred by a learned depth or reconstruction prior;</li> <li>retrieved from an asset database;</li> <li>completed by a generative model;</li> <li>inserted to satisfy physics or ergonomic constraints;</li> <li>selected among alternatives by a visual or language verifier;</li> <li>manually constrained;</li> <li>currently plausible but unsupported.</li> </ul> <p>This is not cosmetic metadata. It enables questions that a final mesh cannot answer.</p> <p>If one input view is removed, which regions lose support? If a retrieved asset is swapped, which conclusions change? If the verifier is replaced, which objects move? Can a user request a “measurement-only” rendering that restores holes instead of hiding them? Can the robot decide where a new observation would collapse the largest consequential ambiguity?</p> <p>The ledger also separates accuracy from honesty. A generated chair back may happen to match reality. It is accurate, but it was not measured. An uncertain, noisy surface may be less accurate in Euclidean distance while being more faithful about the available evidence. Applications care about different mixtures: a game designer may want the plausible chair; a robotic contact planner may need to know which centimeter is imaginary.</p> <h2 id="five-tests-that-current-demos-rarely-show">Five tests that current demos rarely show</h2> <p>The next generation of evaluations should include counterfactuals aimed at the agent’s epistemic behavior.</p> <p><strong>The evidence-removal curve.</strong> Progressively remove views, depth samples, or masks. Measure not only output quality but whether uncertainty and unsupported area increase monotonically. A model whose confidence remains unchanged after its evidence disappears is advertising its prior as perception.</p> <p><strong>The retry curve.</strong> Give the agent more tool calls and independent restarts. Plot measurement consistency and geometric error alongside visual preference. If preference keeps rising while evidence consistency saturates, retries are polishing rather than reconstructing.</p> <p><strong>The verifier swap.</strong> Replace the visual-language judge with a photometric, geometric, physics-based, or human verifier. Large changes reveal that the scene was adapted to the evaluator rather than constrained by the input.</p> <p><strong>The competing-hypothesis test.</strong> Construct inputs with two plausible hidden geometries that make similar visible renderings. A reconstruction agent should preserve the ambiguity or request a discriminating observation. Prematurely selecting the more common asset is not resolution.</p> <p><strong>The intervention test.</strong> Ask the system to choose one additional measurement. A genuinely reconstruction-oriented agent should prefer the view, touch, or motion that separates its leading hypotheses—not merely the angle that makes its current output look best.</p> <p>These tests would make agentic systems look worse before they make them better. That is a feature. They expose the boundary between recovering a world and authoring one.</p> <h2 id="strong-priors-are-not-the-enemy">Strong priors are not the enemy</h2> <p>There are important cases where the prior should dominate. Single-view asset creation is mathematically underdetermined; refusing to complete the back of every object would make the tool useless. Sparse-view reconstruction can have lower expected error with a learned category prior than with purely geometric optimization. Physics and ergonomic constraints can eliminate solutions that fit pixels but could not exist. An agent that combines these sources may be more accurate in the world, not just more attractive in a rendering.</p> <p>The claim here is narrower: plausibility, accuracy, and evidential support should not be collapsed into one score.</p> <p>What would change my mind about the risk? An agentic system that, as tool budget increases, improves held-out measurement prediction and calibrated regional uncertainty in step with human preference; that becomes less confident under input ablation; and that reliably chooses new measurements over unsupported completion when the decision matters. Such a system would be using agency to investigate rather than decorate.</p> <h2 id="reconstruction-after-agents">Reconstruction after agents</h2> <p>The old inverse-problem question was: what scene best explains these measurements?</p> <p>The emerging agentic question is dangerously close to: what scene can my available models and evaluators make most coherent?</p> <p>Those questions coincide only when the feedback loop remains anchored to evidence.</p> <p>Agents are valuable because they can plan, call specialized tools, compare hypotheses, recover from execution failure, and seek new information. The same machinery can also retrieve a familiar asset, repair every visible blemish, and stop when a VLM says the scene looks right. The final render does not tell us which behavior occurred.</p> <p>That is why the next important artifact in agentic reconstruction may not be a stronger generator. It may be an interface that lets us see the boundary between <strong>measurement, inference, and invention</strong>.</p> <p>Until then, a cleaner reconstruction should make us ask one additional question: <strong>cleaner according to what evidence?</strong></p> <h2 id="primary-reading">Primary reading</h2> <ul> <li><a href="https://arxiv.org/abs/2505.20129" rel="external nofollow noopener" target="_blank">Agentic 3D Scene Generation with Spatially Contextualized VLMs</a></li> <li><a href="https://arxiv.org/abs/2505.02836" rel="external nofollow noopener" target="_blank">Scenethesis: A Language and Vision Agentic Framework for 3D Scene Generation</a></li> <li><a href="https://arxiv.org/abs/2603.12238" rel="external nofollow noopener" target="_blank">SceneAssistant: A Visual Feedback Agent for Open-Vocabulary 3D Scene Generation</a></li> <li><a href="https://arxiv.org/abs/2606.10478" rel="external nofollow noopener" target="_blank">3D-CoS: A New 3D Reconstruction Paradigm Based on VLM Code Synthesis</a></li> </ul> <hr> <p><em>© 2026 Zhenghe Guo. Please cite and link to this page rather than reproducing the article in full.</em></p> </div> </article> <br> <hr> <br> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <ul class="list-disc pl-7 my-3 space-y-2 marker:text-[var(--global-theme-color)]"> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/main/blog/2026/best-chain-of-thought-may-be-chain-of-measurements/">The Best Chain of Thought for a Robot May Be a Chain of Measurements</a> </li> </ul> </div> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Zhenghe Guo. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/main/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/main/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/main/assets/al_math/js/mathjax-setup.js"></script> <script src="/main/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script defer src="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.min.js" integrity="sha256-lo/r+jQ81wWrxdIiiiEEd538z4+dTJTt+leOuAS7GCw=" crossorigin="anonymous"></script> <script src="/main/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/main/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/main/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/main/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script defer src="https://cloud.umami.is/script.js" data-website-id="37676d90-adee-445f-adc3-682aaab9ea27"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/main/assets/al_img_tools/js/zoom.js"></script> <script defer src="/main/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/main/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/main/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/main/";
+    },
+  },{id: "nav-publications",
+          title: "publications",
+          description: "Publications grouped by research direction.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/main/publications/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Technical project reports with videos, code, and reproducible resources.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/main/projects/";
+          },
+        },{id: "nav-research-statement",
+          title: "Research Statement",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/main/research/";
+          },
+        },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/main/blog/";
+          },
+        },{id: "post-the-best-chain-of-thought-for-a-robot-may-be-a-chain-of-measurements",
+        
+          title: "The Best Chain of Thought for a Robot May Be a Chain of...",
+        
+        description: "Why embodied reasoning should decide what to observe before it decides what to do.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/main/blog/2026/best-chain-of-thought-may-be-chain-of-measurements/";
+          
+        },
+      },{id: "post-a-better-reconstruction-agent-can-be-less-faithful",
+        
+          title: "A Better Reconstruction Agent Can Be Less Faithful",
+        
+        description: "When stronger priors remove visible defects faster than they recover evidence.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/main/blog/2026/better-reconstruction-agent-can-be-less-faithful/";
+          
+        },
+      },{id: "projects-zjudancer-robocup-humanoid-vision-amp-localization",
+          title: 'ZJUDancer RoboCup Humanoid Vision &amp;amp; Localization',
+          description: "On-robot perception, localization, and odometry integration; RoboCup China Open 2026 First Prize and Runner-up.",
+          section: "Projects",handler: () => {
+              window.location.href = "/main/projects/robocup-vision/";
+            },},{id: "projects-turtlebot-autonomous-navigation-with-rrt",
+          title: 'TurtleBot Autonomous Navigation with RRT*',
+          description: "Nav2 baseline and a custom collision-aware RRT* global planner on a real mobile robot.",
+          section: "Projects",handler: () => {
+              window.location.href = "/main/projects/turtlebot-navigation/";
+            },},{id: "projects-dynamo-unitree-g1-motion-planning",
+          title: 'DYNAMO · Unitree G1 Motion Planning',
+          description: "Dynamics-aware humanoid dance optimization; Asia and Pacific Mathematical Contest in Modeling (APMCM) 2025 National First Prize, top 2%.",
+          section: "Projects",handler: () => {
+              window.location.href = "/main/projects/dynamo/";
+            },},{id: "projects-thu-air-stereo-hand-object-handover",
+          title: 'THU AIR Stereo Hand-Object Handover',
+          description: "Stereo hand-object perception and embodied handover infrastructure.",
+          section: "Projects",handler: () => {
+              window.location.href = "/main/projects/thuair-handover/";
+            },},{id: "projects-roboarm-vision-guided-gomoku-manipulation",
+          title: 'RoboARM · Vision-Guided Gomoku Manipulation',
+          description: "A ROS perception-decision-manipulation loop for a six-axis arm playing Gomoku.",
+          section: "Projects",handler: () => {
+              window.location.href = "/main/projects/chessbot/";
+            },},{id: "projects-hybrid-qubo-ldpc-decoder",
+          title: 'Hybrid QUBO LDPC Decoder',
+          description: "Coherent-Ising-machine-assisted LDPC decoding; 2025 national First Prize and Runner-up.",
+          section: "Projects",handler: () => {
+              window.location.href = "/main/projects/quantum-ldpc/";
+            },},{id: "projects-zhongkong-cup-autonomous-manipulation",
+          title: 'Zhongkong Cup Autonomous Manipulation',
+          description: "Embedded line following and scripted arm manipulation; Zhongkong Cup Second Prize.",
+          section: "Projects",handler: () => {
+              window.location.href = "/main/projects/zhongkong/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%33%32%33%30%31%30%30%39%32%33@%7A%6A%75.%65%64%75.%63%6E", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/StyoKuok", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=aaaoBoEAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-researchgate',
+        title: 'ResearchGate',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.researchgate.net/profile/Zhenghe-Guo-2324807179/", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/zhenghe-guo-318948378", "_blank");
+        },
+      },{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/main/assets/pdf/Zhenghe_Guo_CV.pdf", "_blank");
+        },
+      },{
+        id: 'social-research_statement',
+        title: 'Research_statement',
+        section: 'Socials',
+        handler: () => {
+          window.open("/main/research/", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/main/assets/al_search/js/shortcut-key.js"></script> </body> </html>
