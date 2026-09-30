@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Publications grouped by research direction.
+description: Publications are grouped by research direction. Click any demo preview to enlarge it.
 nav: true
 nav_order: 1
 ---
