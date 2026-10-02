@@ -50,6 +50,11 @@ Fluids and deformable objects are a demanding testbed for this question, not its
 <div><div class="tagline">ISAC · optimization</div><h3>Rate Maximization for UAV-assisted ISAC System with Fluid Antennas</h3><p>X. Yang, <strong>Z. Guo</strong>, S. Liang, Z. Yang, C. Zhu, Z. Zhang · IEEE/CIC ICCC Workshops 2025</p><p>Joint optimization of UAV placement and fluid-antenna configuration for an integrated sensing and communication link, formulated to improve achievable rate under coupled sensing and communication constraints.</p><div class="entry-links"><a href="https://doi.org/10.1109/ICCCWorkshops67136.2025.11148178">Paper</a><a href="{{ '/publications/#inference' | relative_url }}">Abstract</a></div></div>
 </div>
 
+<div class="home-entry">
+<img src="{{ '/assets/media/projects/tase.gif' | relative_url }}" alt="Magnetic microrobot navigation demo">
+<div><div class="tagline">Embodied AI · meta-reinforcement learning</div><h3>Spatio-Temporal Transformer Meta-RL for Robust Magnetic Microrobot Navigation in Cluttered Environments</h3><p><strong>Fanghao Wang*</strong>, <strong>Zhenghe Guo*</strong>, <strong>Yihao Hu*</strong> · Submitted</p><p>Context-aware Meta-RL for robust autonomous navigation of magnetic microrobots in cluttered environments, using spatio-temporal observations to adapt control under changing physical context and partial observability.</p><div class="entry-links"><a href="{{ '/publications/#embodied' | relative_url }}">Abstract</a></div></div>
+</div>
+
 <div class="section-heading"><h2 id="projects">Featured Projects</h2><a href="{{ '/projects/' | relative_url }}">View all</a></div>
 
 <div class="home-entry">
