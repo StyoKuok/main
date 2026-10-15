@@ -33,4 +33,4 @@ An end-to-end physical Gomoku system that turns a camera observation into a lega
 
 ## Resources
 
-[Code](https://github.com/StyoKuok/ChessBot) · [Technical report]({{ '/assets/pdf/chessbot-report.pdf' | relative_url }})
+[Code](https://gitee.com/zjuatri/chess/tree/main/gobang_ws/src) · [Technical report]({{ '/assets/pdf/chessbot-report.pdf' | relative_url }})

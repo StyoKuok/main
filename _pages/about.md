@@ -32,7 +32,7 @@ Fluids and deformable objects are a demanding testbed for this question, not its
 .home-entry{display:grid;grid-template-columns:minmax(190px,28%) 1fr;gap:1.35rem;padding:1.15rem 0;border-bottom:1px solid var(--global-divider-color);align-items:center}
 .home-entry video,.home-entry img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:6px;background:#111}
 .home-entry h3{font-size:1.05rem;margin:0 0 .35rem}.home-entry p{font-size:.92rem;line-height:1.55;margin:.3rem 0}
-.entry-links a{font-size:.85rem;font-weight:600;margin-right:.75rem}.tagline{font-size:.78rem;color:var(--global-text-color-light);font-weight:600;text-transform:uppercase}
+.entry-links a{font-size:1rem;font-weight:600;margin-right:.75rem}.equal-contribution-note{font-size:.85rem;margin-top:.65rem}.tagline{font-size:.78rem;color:var(--global-text-color-light);font-weight:600;text-transform:uppercase}
 .section-heading{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-top:2rem;border-bottom:1px solid var(--global-divider-color)}.section-heading h2{margin:0;padding:0 0 .35rem;border:0}.section-heading a{font-size:.86rem;font-weight:600;white-space:nowrap}
 .institution-list{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.institution{display:grid;grid-template-columns:52px 1fr;gap:.75rem;align-items:center;border-left:3px solid var(--global-theme-color);padding:.35rem .8rem}.institution img{width:48px;height:48px;object-fit:contain}.institution span,.institution small{display:block}
 @media(max-width:600px){.profile.float-left{width:32%;min-width:110px;max-width:130px;margin-right:1rem}.home-entry{grid-template-columns:1fr}.institution-list{grid-template-columns:1fr}}
@@ -42,7 +42,22 @@ Fluids and deformable objects are a demanding testbed for this question, not its
 
 <div class="home-entry">
 <video autoplay loop muted playsinline poster="{{ '/assets/img/publication_preview/objecttwin-office2-poster.jpg' | relative_url }}"><source src="{{ '/assets/media/projects/objecttwin-office2.mp4' | relative_url }}" type="video/mp4"></video>
-<div><div class="tagline">3D reconstruction · digital twins</div><h3>ObjectTwin: Measuring the Asset Correspondence Gap for Capture-Anchored Digital Twins</h3><p><strong>Zhenghe Guo</strong></p><p>Instance-level reconstruction from RGB-D captures, connecting segmentation, VLM filtering, generative asset completion, scan-guided composition, and pose refinement. The work evaluates when a visually convincing asset remains geometrically mismatched to its captured object.</p><div class="entry-links"><a href="https://styokuok.github.io/sim_ready/">Project</a><a href="{{ '/publications/#embodied' | relative_url }}">Abstract</a></div></div>
+<div><div class="tagline">3D reconstruction · digital twins</div><h3>ObjectTwin: Measuring the Asset Correspondence Gap for Capture-Anchored Digital Twins</h3><p><strong>Zhenghe Guo</strong> · Submitted</p><p>Instance-level reconstruction from RGB-D captures, connecting segmentation, VLM filtering, generative asset completion, scan-guided composition, and pose refinement. The work evaluates when a visually convincing asset remains geometrically mismatched to its captured object.</p><div class="entry-links"><a href="https://styokuok.github.io/sim_ready/">Project page</a></div></div>
+</div>
+
+<div class="home-entry">
+<img src="{{ '/assets/media/projects/tase.gif' | relative_url }}" alt="Magnetic microrobot navigation demo">
+<div><div class="tagline">Embodied AI · meta-reinforcement learning</div><h3>Spatio-Temporal Transformer Meta-RL for Robust Magnetic Microrobot Navigation in Cluttered Environments</h3><p><strong>Fanghao Wang*</strong>, <strong>Zhenghe Guo*</strong>, <strong>Yihao Hu*</strong>, et al. · Submitted</p><p>Context-aware Meta-RL for robust autonomous navigation of magnetic microrobots in cluttered environments, using spatio-temporal observations to adapt control under changing physical context and partial observability.</p><div class="entry-links"><a href="{{ '/publications/#embodied' | relative_url }}">Abstract</a></div></div>
+</div>
+
+<div class="home-entry">
+<img src="{{ '/assets/img/publication_preview/deformable_simulation.gif' | relative_url }}" alt="Deformable simulation under contact mismatch">
+<div><div class="tagline">Deformable simulation · residual dynamics</div><h3>Sample-Efficient Residual Dynamics for Contact-Mismatched Deformable Simulation</h3><p><strong>Zhenghe Guo</strong>, Anpei Chen · Submitted</p><p>Learning residual corrections under a controlled contact-model discrepancy. Short-rollout training is evaluated through complete-episode prediction and candidate-action comparisons, testing when learned corrections transfer and improve downstream decisions.</p><div class="entry-links"><a href="https://styokuok.github.io/res_dyn/">Project page</a></div></div>
+</div>
+
+<div class="home-entry">
+<img src="{{ '/assets/img/publication_preview/fluid_history.png' | relative_url }}" alt="Visual fluid histories for evaluating action consequences">
+<div><div class="tagline">World models · action consequences · physical systems</div><h3>Beyond State Prediction: Learning Action Consequences in Visual Physical Systems</h3><p><strong>Zhenghe Guo</strong> · Submitted</p><p>Restoring the same physical state for each candidate action produces complete response tables. Fluid experiments separate information about the current state, prediction of action consequences, and the realized utility of the selected action, including tests on unseen actions and hidden motion.</p><div class="entry-links"><a href="https://styokuok.github.io/vis_phys/">Project page</a></div></div>
 </div>
 
 <div class="home-entry">
@@ -50,10 +65,7 @@ Fluids and deformable objects are a demanding testbed for this question, not its
 <div><div class="tagline">ISAC · optimization</div><h3>Rate Maximization for UAV-assisted ISAC System with Fluid Antennas</h3><p>X. Yang, <strong>Z. Guo</strong>, S. Liang, Z. Yang, C. Zhu, Z. Zhang · IEEE/CIC ICCC Workshops 2025</p><p>Joint optimization of UAV placement and fluid-antenna configuration for an integrated sensing and communication link, formulated to improve achievable rate under coupled sensing and communication constraints.</p><div class="entry-links"><a href="https://doi.org/10.1109/ICCCWorkshops67136.2025.11148178">Paper</a><a href="{{ '/publications/#inference' | relative_url }}">Abstract</a></div></div>
 </div>
 
-<div class="home-entry">
-<img src="{{ '/assets/media/projects/tase.gif' | relative_url }}" alt="Magnetic microrobot navigation demo">
-<div><div class="tagline">Embodied AI · meta-reinforcement learning</div><h3>Spatio-Temporal Transformer Meta-RL for Robust Magnetic Microrobot Navigation in Cluttered Environments</h3><p><strong>Fanghao Wang*</strong>, <strong>Zhenghe Guo*</strong>, <strong>Yihao Hu*</strong>, et al. · Submitted</p><p>Context-aware Meta-RL for robust autonomous navigation of magnetic microrobots in cluttered environments, using spatio-temporal observations to adapt control under changing physical context and partial observability.</p><div class="entry-links"><a href="{{ '/publications/#embodied' | relative_url }}">Abstract</a></div></div>
-</div>
+<p class="equal-contribution-note">* Equal contribution.</p>
 
 <div class="section-heading"><h2 id="projects">Featured Projects</h2><a href="{{ '/projects/' | relative_url }}">View all</a></div>
 

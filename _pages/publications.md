@@ -16,7 +16,8 @@ nav_order: 1
 <section data-publication-group="embodied">
 <h2 id="embodied">3D & Embodied AI</h2>
 
-{% bibliography --query @*[keywords~=embodied] %}
+{% capture embodied_entries %}{% bibliography --query @*[keywords~=embodied] %}{% endcapture %}
+{{ embodied_entries | replace: '>Website</a>', '>Project page</a>' | replace: '<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>', '' }}
 
 </section>
 
@@ -30,6 +31,9 @@ nav_order: 1
 </section>
 
 <style>
+  [data-publication-group] ol.bibliography { list-style: none; padding-left: 0; }
+  [data-publication-group] .links .btn { font-size: 1rem; padding: 0.4rem 0.7rem; line-height: 1.35; margin-top: 0.35rem; }
+
   .portfolio-filter {
     display: flex;
     flex-wrap: wrap;

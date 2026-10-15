@@ -95,7 +95,7 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
@@ -239,6 +239,9 @@ exclude:
   - purgecss.config.js
   - README.md
   - readme_preview/
+  - preview/
+  - output/
+  - artifact_work/
   - gems/
   - migrations/
   - vendor
