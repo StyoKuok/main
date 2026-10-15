@@ -6,16 +6,17 @@
 \usepackage{enumitem}
 \usepackage{tabularx}
 \usepackage{titlesec}
-\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks=true,urlcolor=accent]{hyperref}
 \definecolor{accent}{HTML}{1F5A70}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\tabcolsep}{0pt}
-\setlist[itemize]{leftmargin=1.15em,itemsep=1.5pt,topsep=2pt,parsep=0pt}
+\setlist[itemize]{leftmargin=1.15em,itemsep=1pt,topsep=2pt,parsep=0pt}
 \titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\vspace{-3pt}\color{accent}\titlerule]
-\titlespacing*{\section}{0pt}{9pt}{5pt}
+\titlespacing*{\section}{0pt}{8pt}{4pt}
 \newcommand{\entry}[4]{\textbf{#1}\hfill #2\\\textit{#3}\hfill\textit{#4}\\[-1pt]}
 \newcommand{\project}[2]{\textbf{#1}\hfill #2}
+\newcommand{\link}[2]{\href{#1}{\textcolor{accent}{\underline{#2}}}}
 \begin{document}
 
 {\LARGE\bfseries Zhenghe Guo}\hfill
@@ -53,38 +54,58 @@ Research on instance-level reconstruction, with additional work on physics-groun
 Research on tactile sensing for biomimetic soft-tissue stress-field reconstruction, including sensor-layout optimization, active and sparse sampling, Gaussian-process inference, curved-surface tactile sensing, simulation, and data processing.
 
 \section{Publications}
-\textbf{Zhenghe Guo}. ``ObjectTwin: Measuring the Asset Correspondence Gap for Capture-Anchored Digital Twins.'' \href{https://styokuok.github.io/sim_ready/}{Project page}
+\textbf{Zhenghe Guo}. ``ObjectTwin: Measuring the Asset Correspondence Gap for Capture-Anchored Digital Twins.'' Submitted. \link{https://styokuok.github.io/sim_ready/}{[Project page]}
 
 \vspace{3pt}
-X. Yang, \textbf{Z. Guo}, S. Liang, Z. Yang, C. Zhu, and Z. Zhang. ``Rate Maximization for UAV-assisted ISAC System with Fluid Antennas.'' \textit{2025 IEEE/CIC International Conference on Communications in China Workshops}, pp. 1--5, 2025. \href{https://doi.org/10.1109/ICCCWorkshops67136.2025.11148178}{doi:10.1109/ICCCWorkshops67136.2025.11148178}
+Fanghao Wang\textsuperscript{*}, \textbf{Zhenghe Guo}\textsuperscript{*}, Yihao Hu\textsuperscript{*}, et al. ``Spatio-Temporal Transformer Meta-RL for Robust Magnetic Microrobot Navigation in Cluttered Environments.'' Submitted.
 
 \vspace{3pt}
-\textbf{Zhenghe Guo et al.} ``Action Identification and Validation Design for Prediction with Missing Covariates.'' Manuscript in preparation.
+\textbf{Zhenghe Guo}. ``Sample-Efficient Residual Dynamics for Contact-Mismatched Deformable Simulation.'' Submitted. \link{https://styokuok.github.io/res_dyn/}{[Project page]}
+
+\vspace{3pt}
+\textbf{Zhenghe Guo}. ``Beyond State Prediction: Learning Action Consequences in Visual Physical Systems.'' Submitted. \link{https://styokuok.github.io/vis_phys/}{[Project page]}
+
+\vspace{3pt}
+X. Yang, \textbf{Z. Guo}, S. Liang, Z. Yang, C. Zhu, and Z. Zhang. ``Rate Maximization for UAV-assisted ISAC System with Fluid Antennas.'' \textit{2025 IEEE/CIC International Conference on Communications in China Workshops}, pp. 1--5, 2025. \link{https://doi.org/10.1109/ICCCWorkshops67136.2025.11148178}{[Paper]}
+
+\vspace{3pt}
+\textbf{Zhenghe Guo} et al. ``Action Identification and Validation Design for Prediction with Missing Covariates.'' Submitted to \textit{Journal of Statistical Planning and Inference}. Manuscript available upon request.
+
+\vspace{3pt}
+{\footnotesize \textsuperscript{*}Equal contribution.}
+
+\newpage
+\section{Patents}
+Xiaoyan Chen, Xinyi Fang, Gaofeng Li, Jiming Chen, Zhichao Fan, \textbf{Zhenghe Guo}, Peng Deng, Misi Si, Rui Zhang. ``Orthodontic Periodontal Ligament Stress Measurement Device and Stress Field Reconstruction Method.'' Chinese invention patent application. \textit{Pending}.
+
+\vspace{4pt}
+Gaofeng Li, Zhichao Fan, Xiaoyan Chen, \textbf{Zhenghe Guo}, Xinyi Fang, Peng Cheng, Jiming Chen. ``Method for Forming and Assembling a Simulated Periodontal Ligament Layer and Associated Testing Device.'' Chinese invention patent application. \textit{Pending}.
+
+\vspace{4pt}
+Gaofeng Li, \textbf{Zhenghe Guo} (first student inventor), Xiaoyan Chen, Zhichao Fan, Xinyi Fang, Peng Cheng, Jiming Chen. ``Physical Field Reconstruction Method and Device.'' Chinese invention patent application. \textit{Pending}.
 
 \section{Selected Projects}
-\project{ZJUDancer RoboCup Humanoid Vision and Localization}{2025--2026}
+\project{ZJUDancer RoboCup Humanoid Vision and Localization \link{https://zjudancer.github.io/}{[Team]}}{2025--2026}
 \begin{itemize}
-\item Developed and debugged ball, field, and robot perception, self-localization, and odometry integration for autonomous humanoid soccer; First Prize and Runner-up at RoboCup China Open 2026.
+\item Developed and debugged ball, field, and robot perception, self-localization, and odometry integration for autonomous humanoid soccer; National First Prize and Runner-up at RoboCup China Open 2026.
 \end{itemize}
 
-\project{DYNAMO -- Unitree G1 Dance Motion Planning}{2025}
+\project{DYNAMO -- Unitree G1 Dance Motion Planning \link{https://styokuok.github.io/main/projects/dynamo/}{[Project page]}}{2025}
 \begin{itemize}
 \item Designed a dynamics-aware framework combining contact scheduling, ZMP-aware centroidal control, whole-body coordination, and electrical-energy analysis; Asia and Pacific Mathematical Contest in Modeling (APMCM) National First Prize (top 2\%).
 \end{itemize}
 
-\newpage
-\section{Selected Projects (continued)}
-\project{RoboARM -- Vision-Guided Gomoku Manipulation}{2025}
+\project{RoboARM -- Vision-Guided Gomoku Manipulation \link{https://gitee.com/zjuatri/chess/tree/main/gobang_ws/src}{[Code]}}{2025}
 \begin{itemize}
 \item Integrated YOLO and ArUco perception, an HTTP-to-ROS decision bridge, Negamax search, calibration, CAN-based six-axis arm control, and a pneumatic end effector into an autonomous pick-and-place loop.
 \end{itemize}
 
-\project{TurtleBot Autonomous Navigation}{2025}
+\project{TurtleBot Autonomous Navigation \link{https://styokuok.github.io/main/projects/turtlebot-navigation/}{[Project page]}}{2025}
 \begin{itemize}
 \item Implemented a ROS RRT* global planner with goal-biased sampling, KD-tree collision queries, obstacle inflation, parent selection, rewiring, path publication, and real-robot visualization.
 \end{itemize}
 
-\project{Hybrid QUBO LDPC Decoder}{2025}
+\project{Hybrid QUBO LDPC Decoder \link{https://styokuok.github.io/main/projects/quantum-ldpc/}{[Project page]}}{2025}
 \begin{itemize}
 \item Engineered an LDPC simulation and decoding prototype with belief-propagation baselines, QUBO construction, adaptive penalties, partitioned solving, and BER/FER/runtime evaluation.
 \end{itemize}
@@ -92,19 +113,23 @@ X. Yang, \textbf{Z. Guo}, S. Liang, Z. Yang, C. Zhu, and Z. Zhang. ``Rate Maximi
 \section{Selected Awards}
 \textbf{Robotics}
 \begin{itemize}
-\item RoboCup China Open, Humanoid League (Small) -- First Prize, Runner-up, Team ZJUDancer, 2026.
-\item Zhongkong Cup Robotics Competition -- Second Prize, 2025.
+\item RoboCup China Open, Humanoid League (Small) -- National First Prize, Runner-up, Team ZJUDancer, 2026.
 \end{itemize}
 \textbf{Communication and Innovation}
 \begin{itemize}
 \item Quantum Information Technology and Application Innovation Contest -- National First Prize, Runner-up, 2025.
-\item China International College Students' Innovation Contest -- Bronze Medal, 2025.
+\item China International College Students' Innovation Competition -- Gold Medal, 2026.
 \end{itemize}
 \textbf{Mathematical Modeling}
 \begin{itemize}
 \item Asia and Pacific Mathematical Contest in Modeling (APMCM) -- National First Prize (top 2\%), 2025.
 \item DigitalCup Undergraduate Mathematical Contest in Modeling -- National First Prize in Mathematics and Non-Mathematics groups, 2025.
 \item National Undergraduate Mathematics Competition, Non-Mathematics Category A -- Second Prize.
+\end{itemize}
+
+\textbf{Scholarship}
+\begin{itemize}
+\item Xiangyang Scholarship, First Class (\textyen10,000).
 \end{itemize}
 
 \section{Technical Skills}
@@ -118,6 +143,6 @@ Perception and ML & 3D reconstruction, SfM, visual odometry, object detection, s
 Chinese (native) \quad English (TOEFL 110)
 
 \vfill
-{\footnotesize Last updated August 2026. Detailed project reports, demos, and videos: \href{https://styokuok.github.io/main/}{https://styokuok.github.io/main/}}
+{\footnotesize Last updated October 2026. Detailed project reports, demos, and videos: \href{https://styokuok.github.io/main/}{https://styokuok.github.io/main/}}
 \end{document}
 
