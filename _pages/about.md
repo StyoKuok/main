@@ -17,7 +17,7 @@ latest_posts:
   enabled: false
 ---
 
-I am a final-year undergraduate at [Zhejiang University](https://www.zju.edu.cn/). I build physical systems that sense, reconstruct, and act under incomplete observations. My undergraduate research is advised by [Prof. Mingchuan Zhou](https://www.ce.cit.tum.de/en/air/people/alumni/httpswwwintumdei06peoplemingchuan-zhou-meng-1/). I previously interned at [Inception3D](http://www.inception3d.fun/), led by [Prof. Anpei Chen](https://www.westlake.edu.cn/faculty/anpei-chen.html).
+I am a final-year undergraduate at [Zhejiang University](https://www.zju.edu.cn/). I build physical systems that sense, reconstruct, and act under incomplete observations. My undergraduate research is advised by [Prof. Mingchuan Zhou](https://www.ce.cit.tum.de/en/air/people/alumni/httpswwwintumdei06peoplemingchuan-zhou-meng-1/). I previously interned at [Inception3D](http://www.inception3d.fun/).
 
 My primary research interest is learning representations and world models for physical agents. I am especially interested in mathematical representations that capture fluids and deformable objects, where geometry alone is not enough to describe how a scene will evolve.
 
