@@ -52,7 +52,7 @@ Fluids and deformable objects are a demanding testbed for this question, not its
 
 <div class="home-entry">
 <img src="{{ '/assets/img/publication_preview/deformable_simulation.gif' | relative_url }}" alt="Deformable simulation under contact mismatch">
-<div><div class="tagline">Deformable simulation · residual dynamics</div><h3>Sample-Efficient Residual Dynamics for Contact-Mismatched Deformable Simulation</h3><p><strong>Zhenghe Guo</strong>, Anpei Chen · Submitted</p><p>Learning residual corrections under a controlled contact-model discrepancy. Short-rollout training is evaluated through complete-episode prediction and candidate-action comparisons, testing when learned corrections transfer and improve downstream decisions.</p><div class="entry-links"><a href="https://styokuok.github.io/res_dyn/">Project page</a></div></div>
+<div><div class="tagline">Deformable simulation · residual dynamics</div><h3>Sample-Efficient Residual Dynamics for Contact-Mismatched Deformable Simulation</h3><p><strong>Zhenghe Guo</strong> · Submitted</p><p>Learning residual corrections under a controlled contact-model discrepancy. Short-rollout training is evaluated through complete-episode prediction and candidate-action comparisons, testing when learned corrections transfer and improve downstream decisions.</p><div class="entry-links"><a href="https://styokuok.github.io/res_dyn/">Project page</a></div></div>
 </div>
 
 <div class="home-entry">
