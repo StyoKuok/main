@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hybrid QUBO LDPC Decoder
+title: QUBO-Based Hybrid LDPC Decoding for Coherent Optical Optimization
 description: Coherent-Ising-machine-assisted LDPC decoding; 2025 national First Prize and Runner-up.
 importance: 6
 category: modeling
@@ -26,4 +26,4 @@ An engineering prototype that maps difficult LDPC subproblems to QUBO form and c
 
 **2025 Quantum Information Technology and Application Innovation Contest · National First Prize, Runner-up.**
 
-[English technical report]({{ '/assets/pdf/quantum-ldpc-report.pdf' | relative_url }})
+[Problem](https://github.com/StyoKuok/qubo-hybrid-ldpc-decoding/blob/main/competition_problem_B_en.pdf) · [Paper](https://github.com/StyoKuok/qubo-hybrid-ldpc-decoding/blob/main/ldpc_decoding_ieee_en.pdf)
