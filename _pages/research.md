@@ -8,11 +8,11 @@ nav_order: 3
 
 ## Learning Physical Knowledge from Imperfect Experience
 
+**Research interests:** Representation learning, physical modeling and learned dynamics, system identification, reinforcement learning and control, robotics, inference under uncertainty, and formal methods.
+
 My research asks how learning systems can acquire useful physical knowledge from limited and imperfect experience. Observations are incomplete, measurements contain noise, and data may include systematic errors or misleading correlations. Yet a system must use this evidence to infer hidden conditions, anticipate consequences, and interact with a changing physical world. My long-term goal is to develop learning methods that acquire knowledge which can be **transferred, composed, and continually revised**, so that experience in one setting can support reasoning and adaptation in another.
 
 I am drawn to difficult, open-ended problems where the relevant variables, assumptions, or even the right formulation remain unclear. I enjoy **uncovering the distinctions that make a problem tractable**. As powerful models and automated research tools make complex pipelines easier to construct, I see a growing need to establish which physical relationships a model has learned, what the evidence leaves unresolved, and which new inferences are justified. These questions guide both the methods I want to build and the experiments I use to study them.
-
-**Research interests:** Representation learning · Physical modeling and learned dynamics · System identification · Learning and control · Inference under uncertainty · Formal methods
 
 ### What should a learned representation preserve?
 
