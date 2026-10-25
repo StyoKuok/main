@@ -17,7 +17,11 @@ nav_order: 1
 <h2 id="embodied">3D & Embodied AI</h2>
 
 {% capture embodied_entries %}{% bibliography --query @*[keywords~=embodied] %}{% endcapture %}
-{{ embodied_entries | replace: '>Website</a>', '>Project page</a>' | replace: '<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>', '' }}
+{% capture res_dyn_project_link %}<a href="https://styokuok.github.io/res_dyn/" class="btn btn-sm z-depth-0" role="button">Project page</a>{% endcapture %}
+{% capture res_dyn_links %}{{ res_dyn_project_link }} <a href="https://styokuok.github.io/res_dyn/report/#page=1" class="btn btn-sm z-depth-0" role="button">Report</a>{% endcapture %}
+{% capture vis_phys_project_link %}<a href="https://styokuok.github.io/vis_phys/" class="btn btn-sm z-depth-0" role="button">Project page</a>{% endcapture %}
+{% capture vis_phys_links %}{{ vis_phys_project_link }} <a href="https://styokuok.github.io/vis_phys/report/#page=1" class="btn btn-sm z-depth-0" role="button">Report</a>{% endcapture %}
+{{ embodied_entries | replace: '>Website</a>', '>Project page</a>' | replace: '<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>', '' | replace: res_dyn_project_link, res_dyn_links | replace: vis_phys_project_link, vis_phys_links }}
 
 </section>
 
