@@ -75,7 +75,7 @@ Fluids and deformable objects are a demanding testbed for this question, not its
 </div>
 
 <div class="home-entry">
-<video autoplay loop muted playsinline poster="{{ '/assets/img/projects/dynamo-demo-poster.png' | relative_url }}"><source src="{{ '/assets/media/projects/dynamo-rollout.mp4' | relative_url }}" type="video/mp4"></video>
+<video autoplay loop muted playsinline preload="auto"><source src="{{ '/assets/media/projects/dynamo-rollout.mp4' | relative_url }}" type="video/mp4"></video>
 <div><div class="tagline">Humanoid dynamics · optimization</div><h3>Dyna<strong>Mo</strong>: Contact-Implicit Dynamic Motion Optimization and Energy-Aware Control for Humanoid Choreography</h3><p>DynaMo coordinates contact scheduling, whole-body dynamics, balance, actuator limits, and energy-aware optimization to turn expressive choreography into feasible humanoid motion.</p><p><strong>Asia and Pacific Mathematical Contest in Modeling (APMCM) 2025 · National First Prize (top 2%)</strong></p><div class="entry-links"><a href="https://styokuok.github.io/dynamo/docs/problem-A.pdf">Problem</a><a href="https://styokuok.github.io/dynamo/docs/dynamo-research-paper.pdf">Paper</a><a href="https://styokuok.github.io/dynamo/">Project page</a></div></div>
 </div>
 
