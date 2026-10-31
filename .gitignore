@@ -22,6 +22,7 @@ vendor
 tmp/
 
 # Private source materials and duplicate root assets
+/artifact_work/
 robotics_portfolio/
 /photo_human.jpg
 /iNUS.png
