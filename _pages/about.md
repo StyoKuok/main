@@ -42,7 +42,7 @@ I am drawn to difficult, open-ended problems where progress requires finding a u
 
 <div class="home-entry">
 <video autoplay loop muted playsinline poster="{{ '/assets/img/publication_preview/objecttwin-office2-poster.jpg' | relative_url }}"><source src="{{ '/assets/media/projects/objecttwin-office2.mp4' | relative_url }}" type="video/mp4"></video>
-<div><div class="tagline">3D reconstruction · digital twins</div><h3>ObjectTwin: Measuring the Asset Correspondence Gap for Capture-Anchored Digital Twins</h3><p><strong>Zhenghe Guo</strong> · Submitted</p><p>Instance-level reconstruction from RGB-D captures, connecting segmentation, VLM filtering, generative asset completion, scan-guided composition, and pose refinement. The work evaluates when a visually convincing asset remains geometrically mismatched to its captured object.</p><div class="entry-links"><a href="https://styokuok.github.io/sim_ready/">Project page</a></div></div>
+<div><div class="tagline">3D reconstruction · digital twins</div><h3>ObjectTwin: Training-Free Asset Verification for Captured Scenes</h3><p><strong>Zhenghe Guo</strong> · Submitted</p><p>Instance-level reconstruction from RGB-D captures, connecting segmentation, VLM filtering, generative asset completion, scan-guided composition, and pose refinement. The work evaluates when a visually convincing asset remains geometrically mismatched to its captured object.</p><div class="entry-links"><a href="https://styokuok.github.io/sim_ready/">Project page</a> <a href="https://arxiv.org/abs/2610.35904v2">arXiv</a></div></div>
 </div>
 
 <div class="home-entry">
